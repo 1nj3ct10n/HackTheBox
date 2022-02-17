@@ -1,0 +1,11 @@
+nmap -->> port 443 -->> view certificate -->> docker registry
+google -->> docker registry api testing -->> notsosecure blog
+found passphrase in one blob, and ssh private in another blob -->> login as bolt user into ssh
+enumerate system -->> restic application running as www-data taking backup of root files
+pivot to www-data -->> enumerate webroot folder -->> /var/www/html/bolt/ -->> bolt.db -->> admin hash found
+creds => admin : strawberry
+login into cms <ip>/bolt/bolt -->> edit the main configuration file to allow php file upload
+iptables rule disallowing outgoing connections -->> make and upload bind shell using msfvenom
+catch shell using meterpreter -->> user = www-data
+check sudo -->> sudo -l -->> allowed to run restic as root without password -->> root flag / root ssh private key
+
