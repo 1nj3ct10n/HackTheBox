@@ -1,0 +1,39 @@
+Monterverde Hack the box machine
+
+
+1: Recon the machine bu using basic nmap scan and found kerberos , DC , and other ports etc.
+2: Try SMB enumeration,Kerbrost TGT pulling by guessing useranmes and pssword but not getting any success .
+3: I try the recon phase again by using enum4linux script and found some domain users but still didn't know the passwords 
+4: Now here i used some Lazy Sysadmins techniques which microsoft and OWASP mentioned in their blogs .so after that i got password of one 
+of the user which is 
+
+Username = SABatchJobs
+Password = SABatchJobs 
+
+Check this auth by using crackmapexecution : crackmapexec smb 10.10.10.172 -u SABatchJobs -p SABatchJobs
+
+5: I try to login with Evilwinrm but again no session created .
+6: so try another way which is smb mapping and i found some share access .Command is "smbmap -H 10.10.10.172 -u SABatchJobs -p SABatchJobs"
+7: try another pre defined tool smbclient to map the accessible drives .i have the Users$ ..commands is: smbclient //10.10.10.172/users$ -U SABatchJobs
+
+8: after that defined users seen access the mhope user and found some .xml file and in xml file there is a password and it belongs to mhope.
+
+Username= mhope
+Password = 4n0therD4y@n0th3r$
+
+9: so i used these cred and get a remote session of target machine by using evilwinrm 
+10: so local user flag owned but its not a whole story.
+11: I have seen that this DC based on azure and i have seen there is alot .json config file there and they have some confgurations.
+12: So i google the azure AD archietect and read out its flow and apparently concept came in my mind that azure make a local DB as well to make a auth so i search out its azure local exploitationa and i found some poc
+13: Meanwhile i found an article 2020 of its exploitation but unfortunalty the exploit code is based on Python and PSd1 and these both are not 
+working in targeted machine .
+14: when i google further i found another article of Red Teamer group and same thing happen with VB script but this time they compiled its .EXE
+and i got it and download the files on target mchine by using evil winrm upload parametter
+15: Steps was mentioned in the article and run it .exe file and this binary will decrypt the all pass which available in local db and extract it on terminal and after that i found the pass of admin .-> Command is : 
+
+*Evil-WinRM* PS C:\Program Files\Microsoft Azure AD Sync\bin> & 'C:\Users\mhope\Documents\AdDecrypt\AdDecrypt.exe' -fullSql
+
+Article link : https://vbscrub.video.blog/2020/01/14/azure-ad-connect-database-exploit-priv-esc/
+
+
+
