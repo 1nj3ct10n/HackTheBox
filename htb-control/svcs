@@ -1,0 +1,72 @@
+Status   Name               DisplayName                           
+------   ----               -----------                           
+Stopped  applockerfltr      Smartlocker Filter Driver             
+Stopped  AppMgmt            Application Management                
+Stopped  AppVClient         Microsoft App-V Client                
+Running  BFE                Base Filtering Engine                 
+Running  BrokerInfrastru... Background Tasks Infrastructure Ser...
+Running  CLFS               Common Log (CLFS)                     
+Running  ClipSVC            Client License Service (ClipSVC)      
+Stopped  ConsentUxUserSvc   ConsentUX                             
+Running  DcomLaunch         DCOM Server Process Launcher          
+Stopped  DevicePickerUse... DevicePicker                          
+Stopped  DevicesFlowUserSvc DevicesFlow                           
+Running  Dhcp               DHCP Client                           
+Stopped  dmwappushservice   Device Management Wireless Applicat...
+Running  Dnscache           DNS Client                            
+Stopped  DoSvc              Delivery Optimization                 
+Running  DsSvc              Data Sharing Service                  
+Stopped  EFS                Encrypting File System (EFS)          
+Running  EventLog           Windows Event Log                     
+Stopped  icssvc             Windows Mobile Hotspot Service        
+Stopped  KtmRm              KtmRm for Distributed Transaction C...
+Running  LSM                Local Session Manager                 
+Stopped  MapsBroker         Downloaded Maps Manager               
+Running  mpsdrv             Windows Defender Firewall Authoriza...
+Running  mpssvc             Windows Defender Firewall             
+Running  MSDTC              Distributed Transaction Coordinator   
+Running  NetBT              NetBT                                 
+Stopped  NetSetupSvc        Network Setup Service                 
+Stopped  NetTcpPortSharing  Net.Tcp Port Sharing Service          
+Stopped  NgcCtnrSvc         Microsoft Passport Container          
+Stopped  NgcSvc             Microsoft Passport                    
+Stopped  PhoneSvc           Phone Service                         
+Stopped  PimIndexMainten... Contact Data                          
+Stopped  pla                Performance Logs & Alerts             
+Stopped  PrintWorkflowUs... PrintWorkflow                         
+Stopped  RasAcd             Remote Access Auto Connection Driver  
+Stopped  RasAuto            Remote Access Auto Connection Manager 
+Running  RasMan             Remote Access Connection Manager      
+Stopped  RemoteAccess       Routing and Remote Access             
+Stopped  RmSvc              Radio Management Service              
+Running  RpcEptMapper       RPC Endpoint Mapper                   
+Running  RpcSs              Remote Procedure Call (RPC)           
+Stopped  RSoPProv           Resultant Set of Policy Provider      
+Running  SamSs              Security Accounts Manager             
+Running  Schedule           Task Scheduler                        
+Stopped  seclogon           Secondary Logon                       
+Stopped  SecurityHealthS... Windows Security Service              
+Stopped  SEMgrSvc           Payments and NFC/SE Manager           
+Running  SENS               System Event Notification Service     
+Stopped  SensorService      Sensor Service                        
+Stopped  SensrSvc           Sensor Monitoring Service             
+Stopped  smphost            Microsoft Storage Spaces SMP          
+Running  Spooler            Print Spooler                         
+Stopped  sppsvc             Software Protection                   
+Running  SstpSvc            Secure Socket Tunneling Protocol Se...
+Running  SystemEventsBroker System Events Broker                  
+Running  TimeBrokerSvc      Time Broker                           
+Stopped  UevAgentService    User Experience Virtualization Service
+Stopped  UnistoreSvc        User Data Storage                     
+Stopped  UserDataSvc        User Data Access                      
+Stopped  UsoSvc             Update Orchestrator Service           
+Stopped  vds                Virtual Disk                          
+Stopped  WaaSMedicSvc       Windows Update Medic Service          
+Stopped  WdBoot             Windows Defender Antivirus Boot Driver
+Running  WdFilter           Windows Defender Antivirus Mini-Fil...
+Running  WdNisDrv           Windows Defender Antivirus Network ...
+Running  WdNisSvc           Windows Defender Antivirus Network ...
+Running  WinDefend          Windows Defender Antivirus Service    
+Running  WinHttpAutoProx... WinHTTP Web Proxy Auto-Discovery Se...
+Stopped  WpnUserService     Windows Push Notifications User Ser...
+Stopped  wuauserv           Windows Update

