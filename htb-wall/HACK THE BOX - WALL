@@ -1,0 +1,28 @@
+HACK THE BOX - WALL
+target - 10.10.10.157
+local -  10.10.14.163
+_____________________________________________________________
+_____________________________________________________________
+
+
+NMAP SCAN RESULTS
+___________________________
+
+port 22 - ssh - openssh 7.6p1
+port 80 - httpd - apache 2.4.29
+OS Linux (Ubuntu possible)
+
+GOBUSTER
+__________________________
+
+panel.php
+monitoring
+index.html
+aa.php
+
+HTTP METHODS
+________________________
+
+GET, HEAD, OPTIONS, POST
+
+POST => /centreon/
