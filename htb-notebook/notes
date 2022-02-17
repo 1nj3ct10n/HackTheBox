@@ -1,0 +1,9 @@
+port 80 --> register user and login
+dirsearch --> /admin --> forbidden
+use burp to intercept request --> base64 enc auth cookie --> decoded jwt token
+make a custom token signed with an ssh private key and start python server to host the private key (required for token verification) --> admin panel with upload functionality
+upload rev shell --> www-data
+in /var/backups --> home.tar.gz --> noah home folder with ssh keys --> ssh as noak using key --> noah (user.txt)
+
+priv esc:
+cve-2019-5376 --> https://github.com/Frichetten/CVE-2019-5736-PoC

