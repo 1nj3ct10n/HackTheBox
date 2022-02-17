@@ -1,0 +1,5 @@
+nmap --> port 80 --> web portal
+gobuster --> includes --> auth.php.swp --> username : jennifer
+google --> openbsd web authentication bypass poc --> https://securityaffairs.co/wordpress/94755/security/openbsd-security-flaws.html
+add cookie with username = jennifer --> refresh and login again --> ssh private key --> user.txt
+uname -a --> OpenBSD 6.6 --> google for priv esc exploit --> cve-2019-19520 (github) --> poc code --> root.txt
