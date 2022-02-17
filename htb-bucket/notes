@@ -1,0 +1,4 @@
+nmap --> port 80 --> view source --> s3 bucket
+enum s3 bucket --> commands in text files --> upload rev shell --> www-data
+creds from enuming bucket --> su roy using sysadm creds --> user.txt
+priv esc --> create table, put a payload to get root ssh key --> curl on localhost:8000 to save root key --> transfer the resulting pdf --> ssh with root.key --> root.txt

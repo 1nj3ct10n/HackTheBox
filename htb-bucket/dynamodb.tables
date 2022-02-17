@@ -1,0 +1,7 @@
+# aws dynamodb list-tables --endpoint-url http://s3.bucket.htb
+
+{
+    "TableNames": [
+        "users"
+    ]
+}

@@ -1,0 +1,14 @@
+# aws s3 ls --endpoint-url http://s3.bucket.htb
+
+2021-02-02 10:39:03 adserver
+
+# aws s3 ls --endpoint-url http://s3.bucket.htb s3://adserver
+
+                           PRE images/
+2021-02-02 10:41:04       5344 index.html
+
+# aws s3 ls --endpoint-url http://s3.bucket.htb s3://adserver/images/
+
+2021-02-02 10:43:04      37840 bug.jpg
+2021-02-02 10:43:04      51485 cloud.png
+2021-02-02 10:43:04      16486 malware.png

