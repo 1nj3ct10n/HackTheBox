@@ -1,0 +1,8 @@
+nmap -->> port 80 -->> inspect element -->> credentials
+/author.html -->> hms.htb -->> entry in /etc/hosts
+hms.htb -->> openemr cms -->> multiple vulnerabilities -->> add_user_event -->> sqli
+capture req -->> sqlmap -->> user hash -->> creds
+openemr authenticated rce -->> www-data
+su ash with previously found pass from inspect element -->> user.txt
+netstat -tulpn -->> port 11211 -->> memcached -->> creds for luffy
+ssh as luffy -->> linenum.sh -->> docker suid -->> gtfobins -->> root
