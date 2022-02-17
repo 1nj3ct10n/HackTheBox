@@ -1,0 +1,54 @@
+# Nmap 7.91 scan initiated Tue Dec 29 14:06:14 2020 as: nmap -sC -sV -p8080,8000,8009,9000 -oN nmap-tomcat 10.10.10.130
+Nmap scan report for 10.10.10.130
+Host is up (0.19s latency).
+
+PORT     STATE    SERVICE    VERSION
+8000/tcp filtered http-alt
+8009/tcp filtered ajp13
+8080/tcp open     http-proxy
+| fingerprint-strings: 
+|   GetRequest: 
+|     HTTP/1.1 200 
+|     Accept-Ranges: bytes
+|     ETag: W/"11382-1545655294000"
+|     Last-Modified: Mon, 24 Dec 2018 12:41:34 GMT
+|     Content-Type: text/html
+|     Content-Length: 11382
+|     Date: Tue, 29 Dec 2020 09:12:00 GMT
+|     Connection: close
+|     <!DOCTYPE html>
+|     <html>
+|     <head>
+|     <meta charset="utf-8">
+|     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+|     <title>Mask Inc.</title>
+|     <meta name="description" content="A free responsive website template made exclusively for Frittt by Themesforce and Sarfraz Shaukat">
+|     <meta name="keywords" content="website template, css3, one page, bootstrap, app template, web app, start-up">
+|     <meta name="author" content="Themesforce and Sarfraz Shaukat for Frittt">
+|     <link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16">
+|     <link rel="stylesheet" href="css/bootstrap.css">
+|_    <link rel="stylesheet" href="fonts/font-awesome-4.3.0/css/fon
+9000/tcp filtered cslistener
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port8080-TCP:V=7.91%I=7%D=12/29%Time=5FEAF195%P=x86_64-pc-linux-gnu%r(G
+SF:etRequest,54D,"HTTP/1\.1\x20200\x20\r\nAccept-Ranges:\x20bytes\r\nETag:
+SF:\x20W/\"11382-1545655294000\"\r\nLast-Modified:\x20Mon,\x2024\x20Dec\x2
+SF:02018\x2012:41:34\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Lengt
+SF:h:\x2011382\r\nDate:\x20Tue,\x2029\x20Dec\x202020\x2009:12:00\x20GMT\r\
+SF:nConnection:\x20close\r\n\r\n<!DOCTYPE\x20html>\r\n<html>\r\n<head>\r\n
+SF:\t<meta\x20charset=\"utf-8\">\r\n\t<meta\x20name=\"viewport\"\x20conten
+SF:t=\"width=device-width,\x20initial-scale=1\.0\">\r\n\t<title>Mask\x20In
+SF:c\.</title>\r\n\t<meta\x20name=\"description\"\x20content=\"A\x20free\x
+SF:20responsive\x20website\x20template\x20made\x20exclusively\x20for\x20Fr
+SF:ittt\x20by\x20Themesforce\x20and\x20Sarfraz\x20Shaukat\">\r\n\t<meta\x2
+SF:0name=\"keywords\"\x20content=\"website\x20template,\x20css3,\x20one\x2
+SF:0page,\x20bootstrap,\x20app\x20template,\x20web\x20app,\x20start-up\">\
+SF:r\n\t<meta\x20name=\"author\"\x20content=\"Themesforce\x20and\x20Sarfra
+SF:z\x20Shaukat\x20for\x20Frittt\">\r\n\t<link\x20rel=\"icon\"\x20type=\"i
+SF:mage/png\"\x20href=\"favicons/favicon-16x16\.png\"\x20sizes=\"16x16\">\
+SF:r\n\t<link\x20rel=\"stylesheet\"\x20href=\"css/bootstrap\.css\">\r\n\t<
+SF:link\x20rel=\"stylesheet\"\x20href=\"fonts/font-awesome-4\.3\.0/css/fon
+SF:");
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Dec 29 14:07:07 2020 -- 1 IP address (1 host up) scanned in 52.84 seconds
