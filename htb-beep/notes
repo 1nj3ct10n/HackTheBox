@@ -1,0 +1,5 @@
+nmap -->> port 80 -->> elaxtix -->> searchsploit -->> lfi via vtigercrm dir
+gobuster -->> vtigercrm dir found -->> lfi confirmed
+telnet -->> smtp -->> verified user
+user -->> lfi to rce via smtp
+root -->> sudo -l -->> nmap interactive mode

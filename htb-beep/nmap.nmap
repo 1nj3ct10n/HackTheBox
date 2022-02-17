@@ -1,0 +1,56 @@
+# Nmap 7.80 scan initiated Tue Feb 18 11:08:04 2020 as: nmap -sV -sC -oA nmap -p- 10.10.10.7
+Nmap scan report for 10.10.10.7
+Host is up (0.23s latency).
+Not shown: 65503 closed ports
+PORT      STATE    SERVICE      VERSION
+22/tcp    open     ssh          OpenSSH 4.3 (protocol 2.0)
+| ssh-hostkey: 
+|   1024 ad:ee:5a:bb:69:37:fb:27:af:b8:30:72:a0:f9:6f:53 (DSA)
+|_  2048 bc:c6:73:59:13:a1:8a:4b:55:07:50:f6:65:1d:6d:0d (RSA)
+25/tcp    open     smtp         Postfix smtpd
+|_smtp-commands: beep.localdomain, PIPELINING, SIZE 10240000, VRFY, ETRN, ENHANCEDSTATUSCODES, 8BITMIME, DSN, 
+80/tcp    open     http         Apache httpd 2.2.3
+|_http-server-header: Apache/2.2.3 (CentOS)
+|_http-title: Did not follow redirect to https://10.10.10.7/
+|_https-redirect: ERROR: Script execution failed (use -d to debug)
+110/tcp   open     pop3         Cyrus pop3d 2.3.7-Invoca-RPM-2.3.7-7.el5_6.4
+|_pop3-capabilities: LOGIN-DELAY(0) AUTH-RESP-CODE EXPIRE(NEVER) IMPLEMENTATION(Cyrus POP3 server v2) APOP RESP-CODES TOP USER PIPELINING UIDL STLS
+111/tcp   open     rpcbind      2 (RPC #100000)
+143/tcp   open     imap         Cyrus imapd 2.3.7-Invoca-RPM-2.3.7-7.el5_6.4
+|_imap-capabilities: RIGHTS=kxte Completed ATOMIC NAMESPACE OK STARTTLS NO LITERAL+ URLAUTHA0001 ID X-NETSCAPE SORT QUOTA MULTIAPPEND CHILDREN IDLE CONDSTORE CATENATE ACL IMAP4 IMAP4rev1 THREAD=REFERENCES UIDPLUS BINARY UNSELECT LIST-SUBSCRIBED SORT=MODSEQ LISTEXT MAILBOX-REFERRALS ANNOTATEMORE RENAME THREAD=ORDEREDSUBJECT
+443/tcp   open     ssl/https?
+|_ssl-date: 2020-02-18T07:36:06+00:00; +1h00m42s from scanner time.
+583/tcp   filtered philips-vc
+878/tcp   open     status       1 (RPC #100024)
+993/tcp   open     ssl/imap     Cyrus imapd
+|_imap-capabilities: CAPABILITY
+995/tcp   open     pop3         Cyrus pop3d
+3306/tcp  open     mysql        MySQL (unauthorized)
+4190/tcp  open     sieve        Cyrus timsieved 2.3.7-Invoca-RPM-2.3.7-7.el5_6.4 (included w/cyrus imap)
+4445/tcp  open     upnotifyp?
+4559/tcp  open     hylafax      HylaFAX 4.3.10
+4747/tcp  filtered buschtrommel
+5038/tcp  open     asterisk     Asterisk Call Manager 1.1
+10000/tcp open     http         MiniServ 1.570 (Webmin httpd)
+|_http-title: Site doesn't have a title (text/html; Charset=iso-8859-1).
+11965/tcp filtered unknown
+14129/tcp filtered unknown
+14189/tcp filtered unknown
+16298/tcp filtered unknown
+19311/tcp filtered unknown
+24757/tcp filtered unknown
+34593/tcp filtered unknown
+35963/tcp filtered unknown
+39675/tcp filtered unknown
+46765/tcp filtered unknown
+50543/tcp filtered unknown
+50833/tcp filtered unknown
+52286/tcp filtered unknown
+57767/tcp filtered unknown
+Service Info: Hosts:  beep.localdomain, 127.0.0.1, example.com, localhost; OS: Unix
+
+Host script results:
+|_clock-skew: 1h00m41s
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Feb 18 11:38:00 2020 -- 1 IP address (1 host up) scanned in 1796.45 seconds

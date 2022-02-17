@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Tue Feb 18 11:08:04 2020 as: nmap -sV -sC -oA nmap -p- 10.10.10.7 -->
+<nmaprun scanner="nmap" args="nmap -sV -sC -oA nmap -p- 10.10.10.7" start="1582006084" startstr="Tue Feb 18 11:08:04 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<taskprogress task="SYN Stealth Scan" time="1582006181" percent="7.46" remaining="1205" etc="1582007385"/>
+<taskprogress task="SYN Stealth Scan" time="1582006214" percent="9.25" remaining="1275" etc="1582007489"/>
+<taskprogress task="SYN Stealth Scan" time="1582006307" percent="16.61" remaining="1120" etc="1582007427"/>
+<taskprogress task="SYN Stealth Scan" time="1582006435" percent="26.27" remaining="985" etc="1582007420"/>
+<taskprogress task="SYN Stealth Scan" time="1582006651" percent="40.28" remaining="841" etc="1582007492"/>
+<taskprogress task="SYN Stealth Scan" time="1582006722" percent="45.28" remaining="771" etc="1582007493"/>
+<taskprogress task="SYN Stealth Scan" time="1582007009" percent="65.60" remaining="486" etc="1582007494"/>
+<taskprogress task="SYN Stealth Scan" time="1582007057" percent="68.65" remaining="445" etc="1582007501"/>
+<taskprogress task="SYN Stealth Scan" time="1582007125" percent="73.38" remaining="378" etc="1582007503"/>
+<taskprogress task="SYN Stealth Scan" time="1582007347" percent="87.88" remaining="175" etc="1582007521"/>
+<taskprogress task="SYN Stealth Scan" time="1582007419" percent="93.97" remaining="86" etc="1582007505"/>
+<taskprogress task="NSE" time="1582007793" percent="93.38" remaining="5" etc="1582007798"/>
+<taskprogress task="NSE" time="1582007823" percent="96.32" remaining="4" etc="1582007827"/>
+<host starttime="1582006084" endtime="1582007880"><status state="up" reason="syn-ack" reason_ttl="63"/>
+<address addr="10.10.10.7" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65503">
+<extrareasons reason="resets" count="65503"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" product="OpenSSH" version="4.3" extrainfo="protocol 2.0" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:4.3</cpe></service><script id="ssh-hostkey" output="&#xa;  1024 ad:ee:5a:bb:69:37:fb:27:af:b8:30:72:a0:f9:6f:53 (DSA)&#xa;  2048 bc:c6:73:59:13:a1:8a:4b:55:07:50:f6:65:1d:6d:0d (RSA)"><table>
+<elem key="key">AAAAB3NzaC1kc3MAAACBAI04jN+Sn7/9f2k+5UteAWn8KKj3FRGuF4LyeDmo/xxuHgSsdCjYuWtNS8m7stqgNH5edUu8vZ0pzF/quX5kphWg/UOz9weGeGyzde5lfb8epRlTQ2kfbP00l+kq9ztuWaXOsZQGcSR9iKE4lLRJhRCLYPaEbuxKnYz4WhAv4yD5AAAAFQDXgQ9BbvoxeDahe/ksAac2ECqflwAAAIEAiGdIue6mgTfdz/HikSp8DB6SkVh4xjpTTZE8L/HOVpTUYtFYKYj9eG0W1WYo+lGg6SveATlp3EE/7Y6BqdtJNm0RfR8kihoqSL0VzKT7myerJWmP2EavMRPjkbXw32fVBdCGjBqMgDl/QSEn2NNDu8OAyQUVBEHrE4xPGI825qgAAACANnqx2XdVmY8agjD7eFLmS+EovCIRz2+iE+5chaljGD/27OgpGcjdZNN+xm85PPFjUKJQuWmwMVTQRdza6TSp9vvQAgFh3bUtTV3dzDCuoR1D2Ybj9p/bMPnyw62jgBPxj5lVd27LTBi8IAH2fZnct7794Y3Ge+5r4Pm8Qbrpy68=</elem>
+<elem key="type">ssh-dss</elem>
+<elem key="fingerprint">adee5abb6937fb27afb83072a0f96f53</elem>
+<elem key="bits">1024</elem>
+</table>
+<table>
+<elem key="key">AAAAB3NzaC1yc2EAAAABIwAAAQEA4SXumrUtyO/pcRLwmvnF25NG/ozHsxSVNRmTwEf7AYubgpAo4aUuvhZXg5iymwTcZd6vm46Y+TX39NQV/yT6ilAEtLbrj1PLjJl+UTS8HDIKl6QgIb1b3vuEjbVjDj1LTq0Puzx52Es0/86WJNRVwh4c9vN8MtYteMb/dE2Azk0SQMtpBP+4Lul4kQrNwl/qjg+lQ7XE+NU7Va22dpEjLv/TjHAKImQu2EqPsC99sePp8PP5LdNbda6KHsSrZXnK9hqpxnwattPHT19D94NHVmMHfea9gXN3NCI3NVfDHQsxhqVtR/LiZzpbKHldFU0lfZYH1aTdBfxvMLrVhasZcw==</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="fingerprint">bcc6735913a18a4b550750f6651d6d0d</elem>
+<elem key="bits">2048</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="25"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="smtp" product="Postfix smtpd" hostname=" beep.localdomain" method="probed" conf="10"><cpe>cpe:/a:postfix:postfix</cpe></service><script id="smtp-commands" output="beep.localdomain, PIPELINING, SIZE 10240000, VRFY, ETRN, ENHANCEDSTATUSCODES, 8BITMIME, DSN, "/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="Apache httpd" version="2.2.3" hostname="127.0.0.1" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.2.3</cpe></service><script id="http-server-header" output="Apache/2.2.3 (CentOS)"><elem>Apache/2.2.3 (CentOS)</elem>
+</script><script id="http-title" output="Did not follow redirect to https://10.10.10.7/"><elem key="redirect_url">https://10.10.10.7/</elem>
+</script><script id="https-redirect" output="ERROR: Script execution failed (use -d to debug)"/></port>
+<port protocol="tcp" portid="110"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="pop3" product="Cyrus pop3d" version="2.3.7-Invoca-RPM-2.3.7-7.el5_6.4" hostname="example.com" method="probed" conf="10"><cpe>cpe:/a:cmu:cyrus_imap_server:2.3.7-invoca-rpm-2.3.7-7.el5_6.4</cpe></service><script id="pop3-capabilities" output="LOGIN-DELAY(0) AUTH-RESP-CODE EXPIRE(NEVER) IMPLEMENTATION(Cyrus POP3 server v2) APOP RESP-CODES TOP USER PIPELINING UIDL STLS"/></port>
+<port protocol="tcp" portid="111"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="rpcbind" version="2" extrainfo="RPC #100000" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="143"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="imap" product="Cyrus imapd" version="2.3.7-Invoca-RPM-2.3.7-7.el5_6.4" hostname="example.com" method="probed" conf="10"><cpe>cpe:/a:cmu:cyrus_imap_server:2.3.7-invoca-rpm-2.3.7-7.el5_6.4</cpe></service><script id="imap-capabilities" output="RIGHTS=kxte Completed ATOMIC NAMESPACE OK STARTTLS NO LITERAL+ URLAUTHA0001 ID X-NETSCAPE SORT QUOTA MULTIAPPEND CHILDREN IDLE CONDSTORE CATENATE ACL IMAP4 IMAP4rev1 THREAD=REFERENCES UIDPLUS BINARY UNSELECT LIST-SUBSCRIBED SORT=MODSEQ LISTEXT MAILBOX-REFERRALS ANNOTATEMORE RENAME THREAD=ORDEREDSUBJECT"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="https" tunnel="ssl" method="table" conf="3"/><script id="ssl-date" output="2020-02-18T07:36:06+00:00; +1h00m42s from scanner time."><elem key="date">2020-02-18T07:36:06+00:00</elem>
+<elem key="delta">3642.0</elem>
+</script></port>
+<port protocol="tcp" portid="583"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="philips-vc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="878"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="status" version="1" extrainfo="RPC #100024" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="993"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="imap" product="Cyrus imapd" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:cmu:cyrus_imap_server</cpe></service><script id="imap-capabilities" output="CAPABILITY"/></port>
+<port protocol="tcp" portid="995"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="pop3" product="Cyrus pop3d" method="probed" conf="10"><cpe>cpe:/a:cmu:cyrus_imap_server</cpe></service></port>
+<port protocol="tcp" portid="3306"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="mysql" product="MySQL" extrainfo="unauthorized" method="probed" conf="10"><cpe>cpe:/a:mysql:mysql</cpe></service></port>
+<port protocol="tcp" portid="4190"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="sieve" product="Cyrus timsieved" version="2.3.7-Invoca-RPM-2.3.7-7.el5_6.4" extrainfo="included w/cyrus imap" method="probed" conf="10"><cpe>cpe:/a:cmu:cyrus_imap_server:2.3.7-invoca-rpm-2.3.7-7.el5_6.4</cpe></service></port>
+<port protocol="tcp" portid="4445"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="upnotifyp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="4559"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="hylafax" product="HylaFAX" version="4.3.10" hostname="localhost" ostype="Unix" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="4747"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="buschtrommel" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5038"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="asterisk" product="Asterisk Call Manager" version="1.1" method="probed" conf="10"><cpe>cpe:/a:digium:asterisk:1.1</cpe></service></port>
+<port protocol="tcp" portid="10000"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="MiniServ" version="1.570" extrainfo="Webmin httpd" method="probed" conf="10"/><script id="http-title" output="Site doesn&apos;t have a title (text/html; Charset=iso-8859-1)."></script></port>
+<port protocol="tcp" portid="11965"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="14129"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="14189"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="16298"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="19311"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="24757"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="34593"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="35963"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="39675"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="46765"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="50543"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="50833"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="52286"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="57767"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+</ports>
+<hostscript><script id="clock-skew" output="1h00m41s"><elem key="mean">3641</elem>
+<elem key="count">1</elem>
+<elem key="stddev">0</elem>
+<elem key="median">3641</elem>
+</script></hostscript><times srtt="231768" rttvar="422" to="233456"/>
+</host>
+<runstats><finished time="1582007880" timestr="Tue Feb 18 11:38:00 2020" elapsed="1796.45" summary="Nmap done at Tue Feb 18 11:38:00 2020; 1 IP address (1 host up) scanned in 1796.45 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
