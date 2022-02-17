@@ -1,0 +1,9 @@
+nmap -->> port 80
+dirsearch -->> /admin, todo.txt -->> user : fergus
+cewl -->> generate wordlist -->> bruteforce admin panel 
+creds -->> fergus : RolandDeschain
+msf exploit -->> www-data
+/bl-content/databases/users.php -->> password hashes
+/etc/passwd -->> 2 users -->> shaun , hugo
+su hugo -->> user.txt
+sudo -l -->> sudo security bypass -->> root.txt
