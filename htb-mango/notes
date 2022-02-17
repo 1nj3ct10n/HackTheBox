@@ -1,0 +1,7 @@
+nmap --->> port 443
+view certificate --->> found subdomain --->> access on port 80
+nosql-user-pass-enum.py to enumerate usernames --->> admin, mango
+nosql-user-pass-enum.py to enumerate passwords --->> h3mXK8RhU~f{]f5H, t9KcS3>!0B#2  
+mango : h3mXK8RhU~f{]f5H --->> works with web and ssh
+su admin : t9KcS3>!0B#2 --->> user.txt 
+linenum.sh --->> gtfobins
