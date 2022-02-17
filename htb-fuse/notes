@@ -1,0 +1,13 @@
+nmap -->> port 80 -->> usernames
+cewl -->> generate wordlist
+	cewl -m 3 -d 5 --with-numbers -w wordlist http://fuse.fabricorp.local/papercut/logs/html/index.htm
+smb bruting -->> valid creds
+smb login using tlavel/bhult -->> pass must change error
+smbpasswd to change password of tlavel (Hello1234)
+smb login -->> nothing
+rpcclient -->> enumdomusers -->> system accounts enumeration
+rpcclient -->> enumprinters -->> password found (prolly for svc-print)
+winrm -->> creds work for svc-print
+whoami /privs -->> SeLoadDriverPrivilege
+	https://www.tarlogic.com/en/blog/abusing-seloaddriverprivilege-for-privilege-escalation/
+download resources from: https://github.com/mach1el/htb-scripts/tree/master/exploit-fuse
