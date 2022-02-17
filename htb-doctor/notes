@@ -1,0 +1,5 @@
+nmap --> port 80 --> register user and login
+post new message --> ssti --> ssti shell in xss-shell file (use nc.traditional instead of regular nc) --> web user
+linpeas --> creds for shaun found in apache logs --> su shaun : Guitar123
+splunk running as root --> splunk remote priv esc exploit if a user and pass is known --> github splunk whisperer exploit
+run splunk whisperer with necessary args --> root
