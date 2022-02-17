@@ -1,0 +1,9 @@
+nmap --> port 80 --> wrongs creds --> localhost:3000 (used later)
+port 80 --> robots.txt --> /weather
+gobuster --> /weather/forecast --> ?city=list --> maybe rce
+lua gtfobins + pentest monkey rev shell --> httpd user
+in current dir --> hash for webapi_user --> john cracked
+/etc/passwd --> user r.michaels --> using creds for webapi_user and curl on localhost:3001 read r.michaels ssh key (port 3000 gave item not found)
+ssh as r.michaels --> user.txt
+in home/backup enc backup --> netpgp --decrypt to decrypt the backup --> unzip --> .htpasswd file --> different hash for webapi_user --> crack with john
+sudo not found --> doas (sudo alternate in netbsd) with latest cracked hash --> root.txt
