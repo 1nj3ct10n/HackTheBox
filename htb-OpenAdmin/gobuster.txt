@@ -1,0 +1,2 @@
+/music (Status: 301)
+/artwork (Status: 301)
