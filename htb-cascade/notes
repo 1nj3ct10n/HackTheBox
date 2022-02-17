@@ -1,0 +1,8 @@
+enum4linux -->> get users
+ldapsearch -->> get a pwd for r.thompson
+login with smbclient -->> share Data -->> IT/Temp/s.smith -->> vnc registry file -->> hex password found (decode using vncpwd cmd tool)
+evil-winrm as s.smith -->> user.txt
+login to smbclient -->> share Audit$ -->> DB/Audit.db -->> LDAP table -->> another set of creds
+google the encoded string -->> encryption algo found -->> use the stated IV and secret key with AES decryption -->> cleartext pass
+with r.thompson there was an email saying that the admin has the same pass as the TempAdmin account, and TempAdmin will be removed,
+using that info query deleted objects properties related to TempAdmin -->> Get-ADObject -Filter {SamAccountName -eq 'TempAdmin'} -IncludeDeletedObjects -properties *  -->> found password for TempAdmin and eventually Admin
