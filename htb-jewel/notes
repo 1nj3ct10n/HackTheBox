@@ -1,0 +1,7 @@
+nmap --> port 8000 --> gitweb --> bd.sql --> users and hashes --> summary and search --> dropdown grep --> rails --> search --> rails v5.2.2.1
+cve-2020-8165 --> https://github.com/masahiro331/CVE-2020-8165 --> install and generate rev shell payload
+register user and login --> edit profile --> change username --> put rev shell payload in username --> shell as bill --> user.txt
+sudo -l --> hash for bill cracked --> asking for verification code --> ls -la --> google_authenticator file
+mozilla google authenticator add-on install --> add manual entry with code from .google_authenticator file
+set attacking mand victim machine to the same timezone using `timedatectl` and sync the time using `date`
+sudo -l --> password and verification code from authenticator add-on --> gem gtfobins --> root.txt
