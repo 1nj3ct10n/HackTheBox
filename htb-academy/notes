@@ -1,0 +1,6 @@
+nmap --> port 80 --> register user --> intercept request --> change id from 0 to 1
+/admin.php --> login with registered user creds --> found staging vhost --> visit vhost
+laravel app_key leaked --> msf exploit --> rce --> www-data
+in /var/www/html/academy --> ls -la --> cat .env --> db password leaked --> 'mySup3rP4s5w0rd!!' --> su cry0l1t3 or ssh
+in /var/log/audit/audit.log.3 --> su command and data = some hex --> hex to ascii --> password : mrb3n_Ac@d3my! --> su mrb3n or ssh
+sudo -l --> composer --> gtfo
