@@ -1,0 +1,12 @@
+add sneakycorp.htb to /etc/hosts
+port scan --> port 80 --> get email addresses
+enumerate sub-domains by bruteforcing --> 2 sub-domains found --> dev.sneakycorp.htb and pypi.sneakycorp.htb (works on 8080) --> add all to /etc/hosts
+port 25 --> smtp --> send phishing email with your ip from carastevens to all the email address
+set up listener on port 80 --> email address and password received for paul byrd
+login successful with paul byrd creds on imap (port 143) --> set up evolution mail client to get emails --> creds for developer found
+ftp login with developer creds --> in /dev directory upload files is available --> upload php shell
+catch session with nc by calling the rev_shell_file on dev.sneakycorp.htb/rev_shell_file -->> www-data session --> escalate to developer using creds
+linpeas.sh --> hash for pypi found (md5 apr format) --> using hashcat to crack the hash (mode 1600) --> cracked
+we need to create a pypi package and install it to get user --> follow this blog : "https://www.linode.com/docs/applications/project-management/how-to-create-a-private-python-package-repository/" --> netstat -tulpn --> server listening on 5000 --> linking pypi to port 5000
+ssh-keygen in pwd --> put ssh pub.key in package and then after install login with private key --> user owned
+sudo -l --> no passwd pip3 --> gtfobins --> root

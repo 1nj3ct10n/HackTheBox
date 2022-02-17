@@ -1,0 +1,131 @@
+########## Getting Netbios name ##########
+Doing NBT name scan for addresses from 10.10.10.169
+
+
+########## Checking for NULL sessions ##########
+Could not initialise srvsvc. Error was NT_STATUS_ACCESS_DENIED
+
+########## Enumerating domains ##########
+name:[MEGABANK] idx:[0x0]
+name:[Builtin] idx:[0x0]
+
+
+########## Enumerating password and lockout policies ##########
+
+
+[+] Attaching to 10.10.10.169 using a NULL share
+
+[+] Trying protocol 445/SMB...
+
+        [!] Protocol failed: 'NoneType' object has no attribute 'decode'
+
+[+] Trying protocol 139/SMB...
+
+        [!] Protocol failed: Cannot request session (Called Name:10.10.10.169)
+
+
+
+########## Enumerating users ##########
+Starting Nmap 7.80 ( https://nmap.org ) at 2019-12-16 15:30 PKT
+Nmap scan report for 10.10.10.169
+Host is up (0.23s latency).
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+445/tcp open  microsoft-ds
+
+Host script results:
+|_smb-enum-users: ERROR: Script execution failed (use -d to debug)
+
+Nmap done: 1 IP address (1 host up) scanned in 6.08 seconds
+user:[Administrator] rid:[0x1f4]
+user:[Guest] rid:[0x1f5]
+user:[krbtgt] rid:[0x1f6]
+user:[DefaultAccount] rid:[0x1f7]
+user:[ryan] rid:[0x451]
+user:[marko] rid:[0x457]
+user:[sunita] rid:[0x19c9]
+user:[abigail] rid:[0x19ca]
+user:[marcus] rid:[0x19cb]
+user:[sally] rid:[0x19cc]
+user:[fred] rid:[0x19cd]
+user:[angela] rid:[0x19ce]
+user:[felicia] rid:[0x19cf]
+user:[gustavo] rid:[0x19d0]
+user:[ulf] rid:[0x19d1]
+user:[stevie] rid:[0x19d2]
+user:[claire] rid:[0x19d3]
+user:[paulo] rid:[0x19d4]
+user:[steve] rid:[0x19d5]
+user:[annette] rid:[0x19d6]
+user:[annika] rid:[0x19d7]
+user:[per] rid:[0x19d8]
+user:[claude] rid:[0x19d9]
+user:[melanie] rid:[0x2775]
+user:[zach] rid:[0x2776]
+user:[simon] rid:[0x2777]
+user:[naoki] rid:[0x2778]
+
+
+########## Enumerating Administrators ##########
+Couldn't lookup SIDs
+
+########## Enumerating Domain Admins ##########
+MEGABANK\Administrator
+
+########## Enumerating groups ##########
+Starting Nmap 7.80 ( https://nmap.org ) at 2019-12-16 15:31 PKT
+Nmap scan report for 10.10.10.169
+Host is up (0.23s latency).
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+445/tcp open  microsoft-ds
+
+Host script results:
+|_smb-enum-groups: ERROR: Script execution failed (use -d to debug)
+
+Nmap done: 1 IP address (1 host up) scanned in 5.25 seconds
+
+########## Enumerating shares ##########
+Starting Nmap 7.80 ( https://nmap.org ) at 2019-12-16 15:31 PKT
+Stats: 0:02:50 elapsed; 0 hosts completed (1 up), 1 undergoing Script Scan
+NSE Timing: About 0.00% done
+Stats: 0:03:57 elapsed; 0 hosts completed (1 up), 1 undergoing Script Scan
+NSE Timing: About 0.00% done
+Nmap scan report for 10.10.10.169
+Host is up (0.23s latency).
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+445/tcp open  microsoft-ds
+
+Host script results:
+| smb-enum-shares: 
+|   note: ERROR: Enumerating shares failed, guessing at common ones (NT_STATUS_ACCESS_DENIED)
+|   account_used: <blank>
+|   \\10.10.10.169\ADMIN$: 
+|     warning: Couldn't get details for share: NT_STATUS_ACCESS_DENIED
+|     Anonymous access: <none>
+|   \\10.10.10.169\C$: 
+|     warning: Couldn't get details for share: NT_STATUS_ACCESS_DENIED
+|     Anonymous access: <none>
+|   \\10.10.10.169\IPC$: 
+|     warning: Couldn't get details for share: NT_STATUS_ACCESS_DENIED
+|     Anonymous access: READ
+|   \\10.10.10.169\NETLOGON: 
+|     warning: Couldn't get details for share: NT_STATUS_ACCESS_DENIED
+|_    Anonymous access: <none>
+
+Nmap done: 1 IP address (1 host up) scanned in 402.07 seconds
+
+########## Bruteforcing all users with 'password', blank and username as password
+Hydra v9.0 (c) 2019 by van Hauser/THC - Please do not use in military or secret service organizations, or for illegal purposes.
+
+Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2019-12-16 15:37:53
+[DATA] max 1 task per 1 server, overall 1 task, 84 login tries (l:28/p:3), ~84 tries per task
+[DATA] attacking smb://10.10.10.169:445/
+[STATUS] 38.00 tries/min, 38 tries in 00:01h, 46 to do in 00:02h, 1 active
+[STATUS] 33.50 tries/min, 67 tries in 00:02h, 17 to do in 00:01h, 1 active
+1 of 1 target completed, 0 valid passwords found
+Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2019-12-16 15:40:38

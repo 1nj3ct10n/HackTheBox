@@ -1,0 +1,21 @@
+- Enumerate the usernames from main web page port 80 by using cewl or by manually 
+- Machine is running DC so manage the name by recommended microsoft AD naming conventions in this case the first letter of start name 
+is single alphabet and last name is resides 
+- There is kerberos port is also mentioned so download the red teaming tool Imapcket and perform the kerberost NPUser script to fetch out 
+the kerberos ticket .
+like this ./Getnpuser.py EGOTISTICAL-BANK.LOCAL0./ -dc-ip 10.10.10.175 -no-pass -usersfile /root/Desktop/Susan/sauna.txt -format john 
+
+- After getting the kerberost ticket crack it and get the password and login in by using another red teamiing tool Evil Winrm which is remote 
+management tool and after the we got the powershell interface 
+
+- search out for local flag 
+
+- Invoke the web request to download the powersehll enumeration script and enumerate the targeted machine for priv 
+
+- After that you see the domain user with some high priviledge and his password is also mentioned there in description.
+
+- So by using his priviledge rights use another secret dump script which is available in imapcket to download the hashes of Domain admins and other as well .
+
+secretsdump.py -just-dc-ntlm EGOTISTICAL-BANK.LOCAL./svc_loanmgr@10.10.10.175
+
+-By using the hashes perform Psexec and got Admin access .Thats it . 

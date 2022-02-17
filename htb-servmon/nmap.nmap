@@ -1,0 +1,108 @@
+# Nmap 7.80 scan initiated Wed Apr 15 01:23:49 2020 as: nmap -sC -sV -oA nmap -vv 10.10.10.184
+Increasing send delay for 10.10.10.184 from 0 to 5 due to 31 out of 101 dropped probes since last increase.
+Nmap scan report for 10.10.10.184
+Host is up, received echo-reply ttl 127 (0.19s latency).
+Scanned at 2020-04-15 01:23:50 PKT for 128s
+Not shown: 992 closed ports
+Reason: 992 resets
+PORT     STATE SERVICE       REASON          VERSION
+21/tcp   open  ftp           syn-ack ttl 127 Microsoft ftpd
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+|_01-18-20  12:05PM       <DIR>          Users
+| ftp-syst: 
+|_  SYST: Windows_NT
+22/tcp   open  ssh           syn-ack ttl 127 OpenSSH for_Windows_7.7 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 b9:89:04:ae:b6:26:07:3f:61:89:75:cf:10:29:28:83 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDnC92+BCplDo38VDQIZzb7V3HN/OucvxF0VMDDoYShdUrpDUW6JcSR/Zr6cADbHy7eDLw2O+WW+M4SzH7kfpbTv3HvJ0z8iOsRs2nUrUint4CR/A2vYA9SFOk18FU0QUS0sByBIlemU0uiPxN+iRCcpFhZDj+eiVRF7o/XxNbExnhU/2n9MXwFS8XTYNeGqSLE1vV6KdpMfpJj/yey8gvEpDQTX5OQK+kkUHze3LXLyu/XVTKzfqUBMAP+IQ5F6ICWgaC1a+cx/D7C/aobCbqaXY+75t1mxbEMmm1Wv/42nVQxcT7tN2C3sds4VJkYgZKcBhsE0XdJcR9mTb1wWsg9
+|   256 71:4e:6c:c0:d3:6e:57:4f:06:b8:95:3d:c7:75:57:53 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBMToH2eB7rzpMZuvElpHYko/TXSsOfG8EXWQxmC/T4PCaAmVRDgJWEFMHgpRilSAKoOBlS2RHWNpMJldTFbWSVo=
+|   256 15:38:bd:75:06:71:67:7a:01:17:9c:5c:ed:4c:de:0e (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILbqSRVLRJFVNhD0W0C5xB7b3RoJZZKdM+jSGryFWOQa
+135/tcp  open  msrpc         syn-ack ttl 127 Microsoft Windows RPC
+139/tcp  open  netbios-ssn   syn-ack ttl 127 Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds? syn-ack ttl 127
+5666/tcp open  tcpwrapped    syn-ack ttl 127
+6699/tcp open  tcpwrapped    syn-ack ttl 127
+8443/tcp open  ssl/https-alt syn-ack ttl 127
+| fingerprint-strings: 
+|   FourOhFourRequest, HTTPOptions, RTSPRequest, SIPOptions: 
+|     HTTP/1.1 404
+|     Content-Length: 18
+|     Document not found
+|   GetRequest: 
+|     HTTP/1.1 302
+|     Content-Length: 0
+|     Location: /index.html
+|     nnection from: 10.10.15.162"} }th}/nsclient.ini","has_changed":true,"type":"ini"}}]}}
+|     configure this create a section under: /settings/scheduler/schedules/foobar
+|     modules<
+|     target to send the message to (will be resolved by the consumer)
+|_    rver)
+| ssl-cert: Subject: commonName=localhost
+| Issuer: commonName=localhost
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2020-01-14T13:24:20
+| Not valid after:  2021-01-13T13:24:20
+| MD5:   1d03 0c40 5b7a 0f6d d8c8 78e3 cba7 38b4
+| SHA-1: 7083 bd82 b4b0 f9c0 cc9c 5019 2f9f 9291 4694 8334
+| -----BEGIN CERTIFICATE-----
+| MIICoTCCAYmgAwIBAgIBADANBgkqhkiG9w0BAQUFADAUMRIwEAYDVQQDDAlsb2Nh
+| bGhvc3QwHhcNMjAwMTE0MTMyNDIwWhcNMjEwMTEzMTMyNDIwWjAUMRIwEAYDVQQD
+| DAlsb2NhbGhvc3QwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDXCoMi
+| kUUWbCi0E1C/LfZFrm4UKCheesOFUAITOnrCvfkYmUR0o7v9wQ8yR5sQR8OIxfJN
+| vOTE3C/YZjPE/XLFrLhBpb64X83rqzFRwX7bHVr+PZmHQR0qFRvrsWoQTKcjrElo
+| R4WgF4AWkR8vQqsCADPuDGIsNb6PyXSru8/A/HJSt5ef8a3dcOCszlm2bP62qsa8
+| XqumPHAKKwiu8k8N94qyXyVwOxbh1nPcATwede5z/KkpKBtpNfSFjrL+sLceQC5S
+| wU8u06kPwgzrqTM4L8hyLbsgGcByOBeWLjPJOuR0L/a33yTL3lLFDx/RwGIln5s7
+| BwX8AJUEl+6lRs1JAgMBAAEwDQYJKoZIhvcNAQEFBQADggEBAAjXGVBKBNUUVJ51
+| b2f08SxINbWy4iDxomygRhT/auRNIypAT2muZ2//KBtUiUxaHZguCwUUzB/1jiED
+| s/IDA6dWvImHWnOZGgIUsLo/242RsNgKUYYz8sxGeDKceh6F9RvyG3Sr0OyUrPHt
+| sc2hPkgZ0jgf4igc6/3KLCffK5o85bLOQ4hCmJqI74aNenTMNnojk42NfBln2cvU
+| vK13uXz0wU1PDgfyGrq8DL8A89zsmdW6QzBElnNKpqNdSj+5trHe7nYYM5m0rrAb
+| H2nO4PdFbPGJpwRlH0BOm0kIY0az67VfOakdo1HiWXq5ZbhkRm27B2zO7/ZKfVIz
+| XXrt6LA=
+|_-----END CERTIFICATE-----
+|_ssl-date: TLS randomness does not represent time
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port8443-TCP:V=7.80%T=SSL%I=7%D=4/15%Time=5E961C1A%P=x86_64-pc-linux-gn
+SF:u%r(GetRequest,1D0,"HTTP/1\.1\x20302\r\nContent-Length:\x200\r\nLocatio
+SF:n:\x20/index\.html\r\n\r\n\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0nnection\x20from:\x2010\.10\.15\.162\"}\x20}th}/nsclient\.
+SF:ini\",\"has_changed\":true,\"type\":\"ini\"}}\]}}\0\0\0\x80To\x20config
+SF:ure\x20this\x20create\x20a\x20section\x20under:\x20/settings/scheduler/
+SF:schedules/foobar\0\0\\modules<\x94\x01\xf3h\x16\0\x80The\x20target\x20t
+SF:o\x20send\x20the\x20message\x20to\x20\(will\x20be\x20resolved\x20by\x20
+SF:the\x20consumer\)\0\0rver\)\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\
+SF:0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0")%r(HTTPOptions,36,"HT
+SF:TP/1\.1\x20404\r\nContent-Length:\x2018\r\n\r\nDocument\x20not\x20found
+SF:")%r(FourOhFourRequest,36,"HTTP/1\.1\x20404\r\nContent-Length:\x2018\r\
+SF:n\r\nDocument\x20not\x20found")%r(RTSPRequest,36,"HTTP/1\.1\x20404\r\nC
+SF:ontent-Length:\x2018\r\n\r\nDocument\x20not\x20found")%r(SIPOptions,36,
+SF:"HTTP/1\.1\x20404\r\nContent-Length:\x2018\r\n\r\nDocument\x20not\x20fo
+SF:und");
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: 2m59s
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 40676/tcp): CLEAN (Couldn't connect)
+|   Check 2 (port 20065/tcp): CLEAN (Couldn't connect)
+|   Check 3 (port 54993/udp): CLEAN (Failed to receive data)
+|   Check 4 (port 62863/udp): CLEAN (Failed to receive data)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2020-04-14T20:28:46
+|_  start_date: N/A
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Apr 15 01:25:58 2020 -- 1 IP address (1 host up) scanned in 128.90 seconds

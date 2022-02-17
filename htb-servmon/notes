@@ -1,0 +1,5 @@
+nmap --> ftp anon login allowed -->> 2 files downloaded
+go to ip in browser -->> nvms-1000 -->> exploit-db exploit -->> directory traversal
+msf module -->> to download the passwords file from desktop -->> user.txt
+winPEASE -->> NSClient++ service -->> exploit-db
+web admin creds found

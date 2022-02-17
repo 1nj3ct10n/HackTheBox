@@ -1,0 +1,55 @@
+[+] Finding open SMB ports....
+[+] User SMB session established on 10.10.10.169...
+[+] IP: 10.10.10.169:445	Name: 10.10.10.169                                      
+	Disk                                                  	Permissions	Comment
+	----                                                  	-----------	-------
+	ADMIN$                                            	NO ACCESS	Remote Admin
+	C$                                                	NO ACCESS	Default share
+	.                                                  
+	fr--r--r--                3 Mon Jan  1 04:28:12 1601	InitShutdown
+	fr--r--r--               14 Mon Jan  1 04:28:12 1601	lsass
+	fr--r--r--                3 Mon Jan  1 04:28:12 1601	ntsvcs
+	fr--r--r--                3 Mon Jan  1 04:28:12 1601	scerpc
+	fr--r--r--                1 Mon Jan  1 04:28:12 1601	Winsock2\CatalogChangeListener-314-0
+	fr--r--r--                3 Mon Jan  1 04:28:12 1601	epmapper
+	fr--r--r--                1 Mon Jan  1 04:28:12 1601	Winsock2\CatalogChangeListener-1b0-0
+	fr--r--r--                3 Mon Jan  1 04:28:12 1601	LSM_API_service
+	fr--r--r--                3 Mon Jan  1 04:28:12 1601	eventlog
+	fr--r--r--                1 Mon Jan  1 04:28:12 1601	Winsock2\CatalogChangeListener-380-0
+	fr--r--r--                4 Mon Jan  1 04:28:12 1601	wkssvc
+	fr--r--r--                3 Mon Jan  1 04:28:12 1601	atsvc
+	fr--r--r--                1 Mon Jan  1 04:28:12 1601	Winsock2\CatalogChangeListener-3d0-0
+	fr--r--r--                1 Mon Jan  1 04:28:12 1601	Winsock2\CatalogChangeListener-238-0
+	fr--r--r--                1 Mon Jan  1 04:28:12 1601	Winsock2\CatalogChangeListener-238-1
+	fr--r--r--                1 Mon Jan  1 04:28:12 1601	Winsock2\CatalogChangeListener-434-0
+	fr--r--r--                3 Mon Jan  1 04:28:12 1601	RpcProxy\49676
+	fr--r--r--                3 Mon Jan  1 04:28:12 1601	d4ebb27b7f46213d
+	fr--r--r--                3 Mon Jan  1 04:28:12 1601	RpcProxy\593
+	fr--r--r--                4 Mon Jan  1 04:28:12 1601	srvsvc
+	fr--r--r--                3 Mon Jan  1 04:28:12 1601	efsrpc
+	fr--r--r--                4 Mon Jan  1 04:28:12 1601	netdfs
+	fr--r--r--                1 Mon Jan  1 04:28:12 1601	vgauth-service
+	fr--r--r--                1 Mon Jan  1 04:28:12 1601	Winsock2\CatalogChangeListener-22c-0
+	fr--r--r--                3 Mon Jan  1 04:28:12 1601	W32TIME_ALT
+	fr--r--r--                1 Mon Jan  1 04:28:12 1601	PSHost.132209681471018537.2280.DefaultAppDomain.wsmprovhost
+	fr--r--r--                1 Mon Jan  1 04:28:12 1601	PSHost.132209681483958465.3116.DefaultAppDomain.wsmprovhost
+	fr--r--r--                1 Mon Jan  1 04:28:12 1601	Winsock2\CatalogChangeListener-2bc-0
+	fr--r--r--                1 Mon Jan  1 04:28:12 1601	PSHost.132209684796668959.1020.DefaultAppDomain.wsmprovhost
+	fr--r--r--                1 Mon Jan  1 04:28:12 1601	PSHost.132209689384128628.2152.DefaultAppDomain.wsmprovhost
+	fr--r--r--                1 Mon Jan  1 04:28:12 1601	PSHost.132209695579108870.2752.DefaultAppDomain.wsmprovhost
+	fr--r--r--                1 Mon Jan  1 04:28:12 1601	PSHost.132209697309142545.3048.DefaultAppDomain.wsmprovhost
+	fr--r--r--                1 Mon Jan  1 04:28:12 1601	PSHost.132209702550660798.936.DefaultAppDomain.wsmprovhost
+	fr--r--r--                1 Mon Jan  1 04:28:12 1601	PSHost.132209706396345364.2984.DefaultAppDomain.wsmprovhost
+	fr--r--r--                1 Mon Jan  1 04:28:12 1601	PSHost.132209708041980070.3644.DefaultAppDomain.wsmprovhost
+	fr--r--r--                1 Mon Jan  1 04:28:12 1601	PSHost.132209708793697760.3548.DefaultAppDomain.wsmprovhost
+	fr--r--r--                1 Mon Jan  1 04:28:12 1601	Winsock2\CatalogChangeListener-658-0
+	IPC$                                              	READ ONLY	Remote IPC
+	.                                                  
+	dr--r--r--                0 Wed Sep 25 18:28:35 2019	.
+	dr--r--r--                0 Wed Sep 25 18:28:35 2019	..
+	NETLOGON                                          	READ ONLY	Logon server share 
+	.                                                  
+	dr--r--r--                0 Wed Sep 25 18:28:35 2019	.
+	dr--r--r--                0 Wed Sep 25 18:28:35 2019	..
+	dr--r--r--                0 Wed Sep 25 18:28:35 2019	megabank.local
+	SYSVOL                                            	READ ONLY	Logon server share 

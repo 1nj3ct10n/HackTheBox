@@ -1,0 +1,6 @@
+nmap all ports --> port 5080 --> gitlab --> register as new user and sign in
+gitlab help --> v11.4.7 --> public exploit --> ssrf to rce via new project import via url (live overflow video poc) --> user access
+	--> https://www.youtube.com/watch?v=LrLJuyAdoAg
+in /opt/backup --> gitlab.config --> password --> su root 
+cat /proc/1/cgroup --> pid for docker container --> escape docker container --> root
+	--> https://medium.com/better-programming/escaping-docker-privileged-containers-a7ae7d17f5a1

