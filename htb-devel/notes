@@ -1,0 +1,4 @@
+nmap -->> ftp login allowed
+msfvenom -->> create and upload aspx shell
+meterpreter -->> call shell in browser
+msfconsole -->> exploit suggester -->> kitrapod exploit -->> root!
