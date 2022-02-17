@@ -1,0 +1,17 @@
+# Nmap 7.91 scan initiated Wed Dec 30 12:39:34 2020 as: nmap -sC -sV -p80 -oN blog-dev.nmap blog-dev.travel.htb
+Nmap scan report for blog-dev.travel.htb (10.10.10.189)
+Host is up (0.19s latency).
+rDNS record for 10.10.10.189: travel.htb
+
+PORT   STATE SERVICE VERSION
+80/tcp open  http    nginx 1.17.6
+| http-git: 
+|   10.10.10.189:80/.git/
+|     Git repository found!
+|     Repository description: Unnamed repository; edit this file 'description' to name the...
+|_    Last commit message: moved to git 
+|_http-server-header: nginx/1.17.6
+|_http-title: 403 Forbidden
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Dec 30 12:39:45 2020 -- 1 IP address (1 host up) scanned in 11.93 seconds

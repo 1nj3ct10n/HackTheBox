@@ -1,0 +1,9 @@
+nmap -- port 80 -->> version exploit search -->> filename and path disclosure
+wpscan -->> userenum -->> takis
+gobuster -->> /jobs -->> fuzzing id -->> 13 -->> response -->> hackeraccessgranted
+cve script -->> modification -->> include image extensions, update year range -->> path of image found
+download image -->> steghide -->> private key
+ssh2john -->> crack passphrase -->> superpassword
+ssh -->> takis : superpassword
+sudo -l -->> /bin/fuckin -->> bash script
+sudo /bin/fuckin bash -->> root!

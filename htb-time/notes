@@ -1,0 +1,6 @@
+nmap --> port 80 --> json beautifier and validator
+google --> json validate exploit --> cve-2019-12384 --> github poc --> create inject.sql and use json.payload in web input field --> whell --> user
+linpeas --> /usr/bin/timer_backup.sh --> suid --> scheduled task --> insert rev shell --> root --> unstable shell --> use python3 rev shell to make another stable shell
+
+
+ref : https://github.com/jas502n/CVE-2019-12384

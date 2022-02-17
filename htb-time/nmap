@@ -1,0 +1,19 @@
+# Nmap 7.80 scan initiated Tue Nov  3 16:11:41 2020 as: nmap -sV -sC -vvv -oN nmap 10.10.10.214
+Nmap scan report for 10.10.10.214
+Host is up, received echo-reply ttl 63 (0.20s latency).
+Scanned at 2020-11-03 16:11:42 PKT for 16s
+Not shown: 998 closed ports
+Reason: 998 resets
+PORT   STATE SERVICE REASON         VERSION
+22/tcp open  ssh     syn-ack ttl 63 OpenSSH 8.2p1 Ubuntu 4ubuntu0.1 (Ubuntu Linux; protocol 2.0)
+80/tcp open  http    syn-ack ttl 63 Apache httpd 2.4.41 ((Ubuntu))
+|_http-favicon: Unknown favicon MD5: 7D4140C76BF7648531683BFA4F7F8C22
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.41 (Ubuntu)
+|_http-title: Online JSON parser
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Nov  3 16:11:58 2020 -- 1 IP address (1 host up) scanned in 16.58 seconds

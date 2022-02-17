@@ -1,0 +1,9 @@
+10.10.10.165 (target) | 10.10.15.128 (host)
+
+nmap -->> p80 -->> nostromo 1.9.6 -->> directory traversal + rce -->> msf
+creds in /var/nostromo/conf/.htpasswd -->> david:$1$e7NfNpNi$A6nCwOTqrNR2oDuIKirRZ/ -->> Nowonly4me
+hidden directory -->> /home/david/public_www -->> ssh keys
+crack keys -->> hunter (passphrase)
+
+server-stats.sh -->> journalctl -->> !/bin/bash
+

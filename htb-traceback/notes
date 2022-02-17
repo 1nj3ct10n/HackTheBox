@@ -1,0 +1,6 @@
+search top webshells -->> GitHub link -->> try names of all one by one -->> smevk works
+creds -->> admin : admin
+make python reverse shell -->>  in home -->> notes.txt
+lua gtfobins -->> esc to sysadmin -->> drop ssh keys to get a more stable shell (Optional)
+run pspy -->> login via ssh while pspy running -->> update-motd.d
+google priv esc motd.d -->> fowsniff vulnub writeup -->> set up listener -->> wait for some time -->> root shell

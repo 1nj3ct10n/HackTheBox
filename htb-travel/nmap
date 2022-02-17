@@ -1,0 +1,54 @@
+# Nmap 7.91 scan initiated Wed Dec 30 12:02:16 2020 as: nmap -sC -sV -oN nmap -vvvv 10.10.10.189
+Nmap scan report for 10.10.10.189
+Host is up, received echo-reply ttl 63 (0.20s latency).
+Scanned at 2020-12-30 12:02:16 PKT for 141s
+Not shown: 997 closed ports
+Reason: 997 resets
+PORT    STATE SERVICE  REASON         VERSION
+22/tcp  open  ssh      syn-ack ttl 63 OpenSSH 8.2p1 Ubuntu 4 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 d3:9f:31:95:7e:5e:11:45:a2:b4:b6:34:c0:2d:2d:bc (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDxnce3Q0lulmu/wvSM5WhQ0iC/WX0+bnY34nenZTciRdoQ9O5qCjnZTBdByFyP/NMELkmTTbzA+jjxchXtpmTK42DUAm6aGi115Y0E9xouq4enS2jWLmSwXsrAPSrWH7cT+z4wBrRxA+NdtaHnVgOfZyMMYXgx2Daz16csRaobKAetkdhOLADIqV1rhabO2uZpWHfQ4fu4yhQZDjfeW7GqT9/E2GSgz/gd5j+lD2qJ9XcIBsuht9fKXzTic0/SF6SvhK2XPQS/5IeIfijsio9gnWySay82iTxgXG7crHHGguTbeZ84zwC6WewQw+CmNMgFM21lIOUykc7sr40SeRxeDs2y11xuX+7+7+2sxvUuhI7cRlkSHpw4ptYAf8OF+PZB6wY2ykynEwAN/oVzAue6qO5q9PX2QmiRECG2chl7gCWXaorHlhn9Fo+vTDsmPR/C4WyXd01GSgB7fqmB41KWf3JDrsM5RGIo/S9l1JyquYcVRUVjVWLq+oG6rQ2QpTU=
+|   256 ef:3f:44:21:46:8d:eb:6c:39:9c:78:4f:50:b3:f3:6b (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBKu+hYLqZ52KDZqCFbdgkCBryzxVG9KPy9CC/z0BfuEvfBDwE4v4KBOKrzfFKyis8L0fwR2+2HctyKsE07cKf+w=
+|   256 3a:01:bc:f8:57:f5:27:a1:68:1d:6a:3d:4e:bc:21:1b (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDgfCpBYwJjR+VKGGTcaev15qy8q/+lSMEHsIF1QYAV3
+80/tcp  open  http     syn-ack ttl 62 nginx 1.17.6
+|_http-title: Travel.HTB
+443/tcp open  ssl/http syn-ack ttl 62 nginx 1.17.6
+| ssl-cert: Subject: commonName=www.travel.htb/organizationName=Travel.HTB/countryName=UK/localityName=London
+| Subject Alternative Name: DNS:www.travel.htb, DNS:blog.travel.htb, DNS:blog-dev.travel.htb
+| Issuer: commonName=www.travel.htb/organizationName=Travel.HTB/countryName=UK/localityName=London
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2020-04-23T19:24:29
+| Not valid after:  2030-04-21T19:24:29
+| MD5:   ef0a a4c1 fbad 1ac4 d160 58e3 beac 9698
+| SHA-1: 0170 7c30 db3e 2a93 cda7 7bbe 8a8b 7777 5bcd 0498
+| -----BEGIN CERTIFICATE-----
+| MIIDaTCCAlGgAwIBAgIUCVtOR+HI2VGnWpCcIexOKkdfW6EwDQYJKoZIhvcNAQEL
+| BQAwTDELMAkGA1UEBhMCVUsxDzANBgNVBAcMBkxvbmRvbjETMBEGA1UECgwKVHJh
+| dmVsLkhUQjEXMBUGA1UEAwwOd3d3LnRyYXZlbC5odGIwHhcNMjAwNDIzMTkyNDI5
+| WhcNMzAwNDIxMTkyNDI5WjBMMQswCQYDVQQGEwJVSzEPMA0GA1UEBwwGTG9uZG9u
+| MRMwEQYDVQQKDApUcmF2ZWwuSFRCMRcwFQYDVQQDDA53d3cudHJhdmVsLmh0YjCC
+| ASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANngVuDtQWdsYXq3aJoHohT9
+| g1+H91furbuP8ofkwxdyyk84DsL+FbqTPi1mRqCzc9r5kmMOwXnk95Ah3/k5TKlg
+| Au9EmAKMtPryO7Mw0jhqmzmVEDBd2kI3zpbvd/UfYcSCY8QRs8qW6A3LJzRno6nC
+| gNh5IjF86IU4CtGRs68isoKhR5ziCg7KJFSS7HJZDXje87d0tN6UrSgfdv1N4wVd
+| AbOtYUCZqwZjUpJB2HKSSgrUi7yusvjgwry9Zctui+T0RTMAermAGBJKPlewgRlf
+| 6JXdVlSR+M0ejBINOsnBWEtB9Al2utOFR3Kz0nfLuue3N445CzjenogpaVEEKukC
+| AwEAAaNDMEEwPwYDVR0RBDgwNoIOd3d3LnRyYXZlbC5odGKCD2Jsb2cudHJhdmVs
+| Lmh0YoITYmxvZy1kZXYudHJhdmVsLmh0YjANBgkqhkiG9w0BAQsFAAOCAQEAaxTe
+| o4uS0zyUItle179Ik8nKmHNpP23SsRKxaXINvqjKGDPobSE8A2D2/B+tN7CAYmkm
+| V6+Z+Vpp7OcOTuVc6utAWovYdH1da1J1a59i42a7Ni+IxCTy3dOJUBggG7RgDf8f
+| n/Ug/pPePACy9Bcc1GvhCAhCc8YG8KTShVoF+Pd44OZDgzbm41hLuIm6OKc7fm97
+| 5hu0VnVvzFlAD9X98DbqZDQItUFqH3/ma5vJzMOwoB+2R40aW4YUHaFtUsDeWYCg
+| hU5NoWd+DeWVDbTJcTJH5JCONq44+HTV4dUxoyjdqyQLAR2YuqIFbKF0ohixz6n1
+| 9/2fFKw7v7U/VFDpwA==
+|_-----END CERTIFICATE-----
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Dec 30 12:04:37 2020 -- 1 IP address (1 host up) scanned in 141.62 seconds

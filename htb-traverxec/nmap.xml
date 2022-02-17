@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Wed Dec  4 11:21:20 2019 as: nmap -sC -sV -p- -oA nmap 10.10.10.165 -->
+<nmaprun scanner="nmap" args="nmap -sC -sV -p- -oA nmap 10.10.10.165" start="1575440480" startstr="Wed Dec  4 11:21:20 2019" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<taskprogress task="SYN Stealth Scan" time="1575440539" percent="10.47" remaining="497" etc="1575441035"/>
+<taskprogress task="SYN Stealth Scan" time="1575440655" percent="42.94" remaining="232" etc="1575440886"/>
+<taskprogress task="SYN Stealth Scan" time="1575440756" percent="75.59" remaining="89" etc="1575440845"/>
+<taskprogress task="SYN Stealth Scan" time="1575440810" percent="88.53" remaining="43" etc="1575440853"/>
+<taskprogress task="SYN Stealth Scan" time="1575440835" percent="95.15" remaining="19" etc="1575440853"/>
+<taskprogress task="SYN Stealth Scan" time="1575440842" percent="97.57" remaining="9" etc="1575440851"/>
+<taskprogress task="SYN Stealth Scan" time="1575440843" percent="97.83" remaining="9" etc="1575440851"/>
+<taskprogress task="SYN Stealth Scan" time="1575440843" percent="98.04" remaining="8" etc="1575440850"/>
+<taskprogress task="SYN Stealth Scan" time="1575440844" percent="98.11" remaining="7" etc="1575440851"/>
+<taskprogress task="SYN Stealth Scan" time="1575440844" percent="98.18" remaining="7" etc="1575440851"/>
+<taskprogress task="SYN Stealth Scan" time="1575440844" percent="98.25" remaining="7" etc="1575440850"/>
+<taskprogress task="SYN Stealth Scan" time="1575440844" percent="98.32" remaining="7" etc="1575440850"/>
+<taskprogress task="SYN Stealth Scan" time="1575440844" percent="98.39" remaining="6" etc="1575440850"/>
+<taskprogress task="SYN Stealth Scan" time="1575440845" percent="98.46" remaining="6" etc="1575440851"/>
+<taskprogress task="SYN Stealth Scan" time="1575440845" percent="98.54" remaining="6" etc="1575440850"/>
+<host starttime="1575440481" endtime="1575440863"><status state="up" reason="echo-reply" reason_ttl="63"/>
+<address addr="10.10.10.165" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65533">
+<extrareasons reason="no-responses" count="65533"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" product="OpenSSH" version="7.9p1 Debian 10+deb10u1" extrainfo="protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.9p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 aa:99:a8:16:68:cd:41:cc:f9:6c:84:01:c7:59:09:5c (RSA)&#xa;  256 93:dd:1a:23:ee:d7:1f:08:6b:58:47:09:73:a3:88:cc (ECDSA)&#xa;  256 9d:d6:62:1e:7a:fb:8f:56:92:e6:37:f1:10:db:9b:ce (ED25519)"><table>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQDVWo6eEhBKO19Owd6sVIAFVCJjQqSL4g16oI/DoFwUo+ubJyyIeTRagQNE91YdCrENXF2qBs2yFj2fqfRZy9iqGB09VOZt6i8oalpbmFwkBDtCdHoIAZbaZFKAl+m1UBell2v0xUhAy37Wl9BjoUU3EQBVF5QJNQqvb/mSqHsi5TAJcMtCpWKA4So3pwZcTatSu5x/RYdKzzo9fWSS6hjO4/hdJ4BM6eyKQxa29vl/ea1PvcHPY5EDTRX5RtraV9HAT7w2zIZH5W6i3BQvMGEckrrvVTZ6Ge3Gjx00ORLBdoVyqQeXQzIJ/vuDuJOH2G6E/AHDsw3n5yFNMKeCvNNL</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="fingerprint">aa99a81668cd41ccf96c8401c759095c</elem>
+<elem key="bits">2048</elem>
+</table>
+<table>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBLpsS/IDFr0gxOgk9GkAT0G4vhnRdtvoL8iem2q8yoRCatUIib1nkp5ViHvLEgL6e3AnzUJGFLI3TFz+CInilq4=</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="fingerprint">93dd1a23eed71f086b58470973a388cc</elem>
+<elem key="bits">256</elem>
+</table>
+<table>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIGJ16OMR0bxc/4SAEl1yiyEUxC3i/dFH7ftnCU7+P+3s</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="fingerprint">9dd6621e7afb8f5692e637f110db9bce</elem>
+<elem key="bits">256</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="nostromo" version="1.9.6" method="probed" conf="10"/><script id="http-server-header" output="nostromo 1.9.6"><elem>nostromo 1.9.6</elem>
+</script><script id="http-title" output="TRAVERXEC"><elem key="title">TRAVERXEC</elem>
+</script></port>
+</ports>
+<times srtt="225155" rttvar="3837" to="240503"/>
+</host>
+<runstats><finished time="1575440863" timestr="Wed Dec  4 11:27:43 2019" elapsed="382.78" summary="Nmap done at Wed Dec  4 11:27:43 2019; 1 IP address (1 host up) scanned in 382.78 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
