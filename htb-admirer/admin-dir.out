@@ -1,0 +1,10 @@
+http://10.10.10.187:80/admin-dir/.htaccess.txt
+http://10.10.10.187:80/admin-dir/.htaccess.php
+http://10.10.10.187:80/admin-dir/.htaccess.html
+http://10.10.10.187:80/admin-dir/.htpasswd.txt
+http://10.10.10.187:80/admin-dir/.htpasswd.php
+http://10.10.10.187:80/admin-dir/.htpasswd.html
+http://10.10.10.187:80/admin-dir/contacts.txt
+http://10.10.10.187:80/admin-dir/credentials.txt
+http://10.10.10.187:80/admin-dir/.php
+http://10.10.10.187:80/admin-dir/.html

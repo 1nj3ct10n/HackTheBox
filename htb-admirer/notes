@@ -1,0 +1,8 @@
+nmap -->> port 80
+dirsearch (with extensions sh,htm,txt,html) -->> admin-dir -->> credentials.txt and contacts.txt
+credentials.txt -->> port 21
+ftp -->> dump entire dir
+dirsearch -->> p80 -->> utility-scripts -->> adminer.php -->> public-exploit -->> https://www.foregenix.com/blog/serious-vulnerability-discovered-in-adminer-tool
+adminer.php -->> creds for waldo found in /var/www/html/index.php (within local-db)
+ssh -->> waldo : &<h5b~yK3F#{PaPB&dA}{H> -->> user 
+sudo -l -->> python library hijacking -->> create fake shutil.py with rev shell -->> root

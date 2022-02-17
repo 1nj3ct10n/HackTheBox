@@ -1,0 +1,9 @@
+http://10.10.10.187:80/utility-scripts/.htaccess.txt
+http://10.10.10.187:80/utility-scripts/.htpasswd.txt
+http://10.10.10.187:80/utility-scripts/.htaccess.html
+http://10.10.10.187:80/utility-scripts/.htaccess.php
+http://10.10.10.187:80/utility-scripts/.htpasswd.php
+http://10.10.10.187:80/utility-scripts/.htpasswd.html
+http://10.10.10.187:80/utility-scripts/adminer.php
+http://10.10.10.187:80/utility-scripts/info.php
+http://10.10.10.187:80/utility-scripts/phptest.php
