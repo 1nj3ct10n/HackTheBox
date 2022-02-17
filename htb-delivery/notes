@@ -1,0 +1,7 @@
+nmap --> port 80 --> contact us --> port 8065 and a subdomain
+helpdesk.delivery.htb --> open a ticket --> note ticket id and email
+port 8065 --> register a user --> on helpdesk check ticket status with ticket id and email used at the time of creating a ticket  --> account verification link recieved for mattermost server
+open link in new tab and then login --> msg from root with ssh creds --> user.txt
+in /opt/backup/ --> config file --> creds for mysql --> login
+root password hash --> mattermost server --> password cracking hint
+use optimized haschat rule for hash cracking with hashcat --> root password --> root.txt

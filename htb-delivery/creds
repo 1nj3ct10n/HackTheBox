@@ -1,0 +1,20 @@
+maildeliverer : Youve_G0t_Mail! --> ssh
+mmuser : Crack_The_MM_Admin_PW --> mysql
+mariadb --> mattermost:
+
++----------------------------------+--------------------------------------------------------------+
+| Username                         | Password                                                     |
++----------------------------------+--------------------------------------------------------------+
+| surveybot                        |                                                              |
+| c3ecacacc7b94f909d04dbfd308a9b93 | $2a$10$u5815SIBe2Fq1FZlv9S8I.VjU3zeSPBrIEg9wvpiLaS7ImuiItEiK |
+| 5b785171bfb34762a933e127630c4860 | $2a$10$3m0quqyvCE8Z/R1gFcCOWO6tEj6FtqtBn8fRAXQXmaKmg.HDGpS/G |
+| hello1234                        | $2a$10$9.cBqgZA4v9zmN0NXn6jKOnoWTRW5t8ApH4WDkXaFN.PAHLugU02a |
+| hello                            | $2a$10$3W0puw3yLSA/W5EyoWmS.Ow9fkN/T4A8Age6JQfq8RDtsrGgFbvA. |
+| root                             | $2a$10$VM6EeymRxJ29r8Wjkr8Dtev0O.1STWb4.4ScG.anuu7v0EFJwgjjO |
+| ff0a21fc6fc2488195e16ea854c963ee | $2a$10$RnJsISTLc9W3iUcUggl1KOG9vqADED24CQcQ8zvUm1Ir9pxS.Pduq |
+| channelexport                    |                                                              |
+| 9ecfb4be145d47fda0724f697f35ffaf | $2a$10$s.cLPSjAVgawGOJwB7vrqenPg2lrDtOECRtjwWahOzHfq1CoFyFqm |
+| hello123                         | $2a$10$odd4AneDg3CqNdIS8qhkGOwnee4Fj3vPRW.v/JIWeCJWnYPgPr6lW |
+| bobbyolsen                       | $2a$10$JvUCUUGX8CCMBXb5Q04OI.iA.DBC86.B5Ov3ACtGhE.GaHJWxI5oO |
+| hello1                           | $2a$10$XmDhQUtUNOmMjVxTTObwgerEtkrVKg9XKzGq0YBJ3vjqjnsEMuku2 |
++----------------------------------+--------------------------------------------------------------+
