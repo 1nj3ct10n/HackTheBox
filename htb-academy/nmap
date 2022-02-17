@@ -1,0 +1,18 @@
+# Nmap 7.80 scan initiated Wed Nov 11 11:50:02 2020 as: nmap -sV -sC -oN nmap -vvv 10.10.10.215
+Increasing send delay for 10.10.10.215 from 0 to 5 due to 74 out of 246 dropped probes since last increase.
+Nmap scan report for academy.htb (10.10.10.215)
+Host is up, received reset ttl 63 (0.41s latency).
+Scanned at 2020-11-11 11:50:03 PKT for 124s
+Not shown: 998 closed ports
+Reason: 998 resets
+PORT   STATE SERVICE REASON         VERSION
+22/tcp open  ssh     syn-ack ttl 63 OpenSSH 8.2p1 Ubuntu 4ubuntu0.1 (Ubuntu Linux; protocol 2.0)
+80/tcp open  http    syn-ack ttl 63 Apache httpd 2.4.41 ((Ubuntu))
+| http-methods: 
+|_  Supported Methods: GET HEAD
+|_http-title: Hack The Box Academy
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Nov 11 11:52:07 2020 -- 1 IP address (1 host up) scanned in 125.96 seconds
