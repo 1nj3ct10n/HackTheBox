@@ -1,0 +1,11 @@
+nmap, smbmap, smbclient (null session) --->> tempuser:welcome2019
+in data share, found creds for c.smith
+ru_config.xml -->> base64 string -->> paste in google -->> run the online compiler -->> creds found
+smbclient -->> c.smith : xRxRxPANCAK3SxRxRx
+PS s:\C.Smith\HQK Reporting> Get-Content -Path ".\Debug Mode Password.txt" -Stream password
+high port debug mode pass : WBQ201953D8w                  
+high port directory : C:\Program Files\HQK\LDAP
+lpad.conf
+User=Administrator
+Password=yyEq0Uvvhq2uQOcWG8peLoeRQehqip/fKdeG/kjEVb4=
+https://dotnetfiddle.net/LdhDaa : XtH4nkS4Pl4y1nGX
