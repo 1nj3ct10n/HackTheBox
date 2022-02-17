@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Sun Dec  1 19:46:07 2019 as: nmap -sC -sV -oA nmap -p- 10.10.10.160 -->
+<nmaprun scanner="nmap" args="nmap -sC -sV -oA nmap -p- 10.10.10.160" start="1575211567" startstr="Sun Dec  1 19:46:07 2019" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<taskprogress task="SYN Stealth Scan" time="1575211692" percent="8.51" remaining="1334" etc="1575213026"/>
+<taskprogress task="SYN Stealth Scan" time="1575211810" percent="15.50" remaining="1319" etc="1575213129"/>
+<taskprogress task="SYN Stealth Scan" time="1575212158" percent="31.35" remaining="1293" etc="1575213450"/>
+<taskprogress task="SYN Stealth Scan" time="1575212670" percent="53.59" remaining="955" etc="1575213624"/>
+<taskprogress task="SYN Stealth Scan" time="1575212780" percent="58.16" remaining="872" etc="1575213652"/>
+<taskprogress task="SYN Stealth Scan" time="1575213026" percent="69.42" remaining="643" etc="1575213668"/>
+<taskprogress task="SYN Stealth Scan" time="1575213195" percent="72.88" remaining="606" etc="1575213800"/>
+<taskprogress task="SYN Stealth Scan" time="1575213271" percent="76.12" remaining="535" etc="1575213805"/>
+<taskprogress task="SYN Stealth Scan" time="1575213473" percent="84.49" remaining="350" etc="1575213823"/>
+<taskprogress task="SYN Stealth Scan" time="1575213577" percent="88.35" remaining="266" etc="1575213842"/>
+<taskprogress task="SYN Stealth Scan" time="1575213854" percent="96.56" remaining="82" etc="1575213935"/>
+<taskprogress task="SYN Stealth Scan" time="1575214037" percent="99.99" remaining="1" etc="1575214037"/>
+<taskprogress task="SYN Stealth Scan" time="1575214048" percent="99.99" remaining="1" etc="1575214048"/>
+<host starttime="1575211568" endtime="1575214111"><status state="up" reason="echo-reply" reason_ttl="63"/>
+<address addr="10.10.10.160" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65531">
+<extrareasons reason="resets" count="65531"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" product="OpenSSH" version="7.6p1 Ubuntu 4ubuntu0.3" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.6p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 46:83:4f:f1:38:61:c0:1c:74:cb:b5:d1:4a:68:4d:77 (RSA)&#xa;  256 2d:8d:27:d2:df:15:1a:31:53:05:fb:ff:f0:62:26:89 (ECDSA)&#xa;  256 ca:7c:82:aa:5a:d3:72:ca:8b:8a:38:3a:80:41:a0:45 (ED25519)"><table>
+<elem key="bits">2048</elem>
+<elem key="fingerprint">46834ff13861c01c74cbb5d14a684d77</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQDem1MnCQG+yciWyLak5YeSzxh4HxjCgxKVfNc1LN+vE1OecEx+cu0bTD5xdQJmyKEkpZ+AVjhQo/esF09a94eMNKcp+bhK1g3wqzLyr6kwE0wTncuKD2bA9LCKOcM6W5GpHKUywB5A/TMPJ7UXeygHseFUZEa+yAYlhFKTt6QTmkLs64sqCna+D/cvtKaB4O9C+DNv5/W66caIaS/B/lPeqLiRoX1ad/GMacLFzqCwgaYeZ9YBnwIstsDcvK9+kCaUE7g2vdQ7JtnX0+kVlIXRi0WXta+BhWuGFWtOV0NYM9IDRkGjSXA4qOyUOBklwvienPt1x2jBrjV8v3p78Tzz</elem>
+</table>
+<table>
+<elem key="bits">256</elem>
+<elem key="fingerprint">2d8d27d2df151a315305fbfff0622689</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBIRgCn2sRihplwq7a2XuFsHzC9hW+qA/QsZif9QKAEBiUK6jv/B+UxDiPJiQp3KZ3tX6Arff/FC0NXK27c3EppI=</elem>
+</table>
+<table>
+<elem key="bits">256</elem>
+<elem key="fingerprint">ca7c82aa5ad372ca8b8a383a8041a045</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIF3FKsLVdJ5BN8bLpf80Gw89+4wUslxhI3wYfnS+53Xd</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="Apache httpd" version="2.4.29" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.29</cpe></service><script id="http-server-header" output="Apache/2.4.29 (Ubuntu)"><elem>Apache/2.4.29 (Ubuntu)</elem>
+</script><script id="http-title" output="The Cyber Geek&apos;s Personal Website"><elem key="title">The Cyber Geek&apos;s Personal Website</elem>
+</script></port>
+<port protocol="tcp" portid="6379"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="redis" product="Redis key-value store" version="4.0.9" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="10000"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="MiniServ" version="1.910" extrainfo="Webmin httpd" method="probed" conf="10"/><script id="http-robots.txt" output="1 disallowed entry &#xa;/"/><script id="http-title" output="Login to Webmin"><elem key="title">Login to Webmin</elem>
+</script><script id="http-trane-info" output="Problem with XML parsing of /evox/about"/></port>
+</ports>
+<times srtt="269878" rttvar="17963" to="341730"/>
+</host>
+<runstats><finished time="1575214111" timestr="Sun Dec  1 20:28:31 2019" elapsed="2543.92" summary="Nmap done at Sun Dec  1 20:28:31 2019; 1 IP address (1 host up) scanned in 2543.92 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

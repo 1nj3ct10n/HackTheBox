@@ -1,0 +1,7 @@
+nmap --> port 80 --> cutenews 2.1.2 --> msf exploit
+register arbitrary user --> set options --> run --> www-data
+in cutenews/cdata/users/lines --> base64 encoded stuff --> base64 decode --> hash for paul --> crackstation valid creds
+su paul with pass --> user.txt --> in paul .ssh/known_hosts --> ssh to localhost
+ssh as nadav to localhost --> nadav shell --> nadav running gd-bus
+google gd-bus priv esc --> get root id_rsa --> root.txt
+	blog: https://unit42.paloaltonetworks.com/usbcreator-d-bus-privilege-escalation-in-ubuntu-desktop/

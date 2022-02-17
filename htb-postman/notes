@@ -1,0 +1,8 @@
+nmap scan -p 6379
+redis pentesting google, create and transfer ssh keys to the target
+find id_rsa.bak and crack it using ss2john and john --->> computer2008
+su Matt using the cracked password..
+googling up the webmin service for an exploit, came up with a CVE --->> sadly msf module only
+setting up the options
+firing away the exploit, and ROOT Dance!!!
+Note: set ssl=true

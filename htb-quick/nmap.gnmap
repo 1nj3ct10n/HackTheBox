@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Fri Jul 10 00:55:40 2020 as: nmap -sC -sV -oA nmap 10.10.10.186
+Host: 10.10.10.186 ()	Status: Up
+Host: 10.10.10.186 ()	Ports: 22/open/tcp//ssh//OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)/, 9001/open/tcp//tor-orport?///	Ignored State: closed (998)
+# Nmap done at Fri Jul 10 00:57:39 2020 -- 1 IP address (1 host up) scanned in 118.30 seconds
